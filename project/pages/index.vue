@@ -1,7 +1,6 @@
 <template>
   <div class="hi">
     <h1 class="g">hi</h1>
-    <NuxtLogo></NuxtLogo>
   </div>
 </template>
 
@@ -14,8 +13,11 @@ export default {
 
 <style>
   @import '../styles/root.css';
-  body, head {
-    background-color: var(--neonblue);
+  body, head, * {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
   .hi {
     height: 100vh;
