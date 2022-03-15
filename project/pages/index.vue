@@ -46,5 +46,7 @@ h1 {
 }
 button {
   font-size: var(--h2);
+  margin: 1rem;
+  background-color: var(--lightblue);
 }
 </style>
