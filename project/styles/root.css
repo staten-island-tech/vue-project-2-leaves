@@ -1,6 +1,6 @@
 :root {
     /* colors */
-    --darkblue: rgb(14, 35, 78);
+    --darkblue: rgb(14, 35, 78); 
     --lightblue: rgb(196, 248, 255);
 
     --extraLarge: 4.768rem;
@@ -13,4 +13,6 @@
     --h6: 1rem;
     --small: 0.8rem;
     --extraSmall: 0.64rem;
+
+    /* NOTE: if you can please set up color palettes for two themes, i was thinking a dark/neon theme and a red/blue theme, but we can have more */
 }
