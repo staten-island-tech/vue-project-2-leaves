@@ -11,14 +11,10 @@
       <button class="button">Dynmax</button>
       <button class="button">Theme</button>
     </div>
-    <div class="map">
-      <img
-        src="https://img.gamewith.net/article/thumbnail/rectangle/13350.png"
-        alt=""
-      />
-    </div>
+    <div class="map"></div>
+    
   </div>
-  <!-- Note: this is for the header please don't touch -->
+  
 </template>
 
 <script>
@@ -58,5 +54,7 @@ export default {
 }
 .map {
   text-align: center;
+  height: 100vh;
+  background-image: url("https://img.gamewith.net/article/thumbnail/rectangle/13350.png");
 }
 </style>
