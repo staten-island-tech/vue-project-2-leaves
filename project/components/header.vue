@@ -11,22 +11,26 @@
       <button class="button">Dynmax</button>
       <button class="button">Theme</button>
     </div>
+    <div class="map">
+      <img
+        src="https://img.gamewith.net/article/thumbnail/rectangle/13350.png"
+        alt=""
+      />
+    </div>
   </div>
   <!-- Note: this is for the header please don't touch -->
 </template>
 
 <script>
 export default {
-    name: "Header",
-       
-}
+  name: "Header",
+};
 </script>
 
 <style>
 .title {
   background: #3f0000;
   text-align: center;
-  
 }
 .g {
   font-size: var(--extraLarge);
@@ -47,10 +51,12 @@ export default {
   margin-right: 1rem;
   background-color: transparent;
   border: none;
-  font-size: var(--h4)
+  font-size: var(--h4);
 }
 .button:hover {
-  transform: scaleX(1.1);
+  transform: scaleX(1.2);
 }
-
+.map {
+  text-align: center;
+}
 </style>
