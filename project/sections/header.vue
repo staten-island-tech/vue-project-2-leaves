@@ -55,6 +55,8 @@ export default {
 .map {
   text-align: center;
   height: 100vh;
+  
   background-image: url("https://img.gamewith.net/article/thumbnail/rectangle/13350.png");
+  background-size: cover;
 }
 </style>
