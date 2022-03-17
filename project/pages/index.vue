@@ -6,9 +6,9 @@
   </div>
 </template>
 <script>
-import Header from "../components/header.vue"
-import About from "../components/about.vue"
-import Towns from "../components/towns.vue"
+import Header from "../sections/header.vue"
+import About from "../sections/about.vue"
+import Towns from "../sections/towns.vue"
 export default {
   name: "site",
   components: {
