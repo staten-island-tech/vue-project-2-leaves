@@ -12,7 +12,9 @@
       <button class="button">Theme</button>
     </div>
     <div class="map"></div>
+    
   </div>
+  
 </template>
 
 <script>
@@ -54,6 +56,5 @@ export default {
   text-align: center;
   height: 100vh;
   background-image: url("https://img.gamewith.net/article/thumbnail/rectangle/13350.png");
-  background-size: cover;
 }
 </style>
