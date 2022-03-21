@@ -2,7 +2,13 @@
   <div class="towns">
     <h4 class="sectionTitle">Towns</h4>
     <div class="display">
-      <Card v-for="town in towns" :key="town" :name="town.name" :image="town.image" :description="town.desc"></Card>
+      <Card
+        v-for="town in towns"
+        :key="town"
+        :name="town.name"
+        :image="town.image"
+        :description="town.desc"
+      ></Card>
     </div>
   </div>
 </template>
@@ -20,13 +26,13 @@ export default {
         {
           name: "Tuffield",
           image:
-            "https://static.wikia.nocookie.net/pokemon/images/6/67/Turffield_Stadium.png/revision/latest?cb=20191127144837",
+            "https://images.gnwcdn.com/2019/articles/2019-11-21-16-42/pokemon_sword_shield_turffield_gym_milo_1.jpg/EG11/resize/375x-1/quality/75/format/jpg",
           desc: "wfasdawd",
         },
         {
           name: "Hulbury",
           image:
-            "https://static.wikia.nocookie.net/pokemon/images/5/5d/Hulbury_Stadium.png/revision/latest?cb=20191127145706",
+            "https://img.gamewith.net/article/thumbnail/rectangle/14025.png",
           desc: "",
         },
         {
@@ -72,10 +78,10 @@ export default {
 </script>
 
 <style>
-  .display {
-    display: flex;
-    flex-flow: row nowrap;
-    overflow-x: auto;
-    overflow-y: none;
-  }
+.display {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: auto;
+  overflow-y: none;
+}
 </style>
