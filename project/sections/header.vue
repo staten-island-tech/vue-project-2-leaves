@@ -12,9 +12,7 @@
       <button class="button">Theme</button>
     </div>
     <div class="map"></div>
-    
   </div>
-  
 </template>
 
 <script>
@@ -55,8 +53,8 @@ export default {
 .map {
   text-align: center;
   height: 100vh;
-  
-  background-image: url("https://img.gamewith.net/article/thumbnail/rectangle/13350.png");
+
+  background-image: url("https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2019/02/pokemon-sword-and-shield-galar-closeup.jpg?itok=P4mZ-3Kl");
   background-size: cover;
 }
 </style>

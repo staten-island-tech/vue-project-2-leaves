@@ -1,8 +1,11 @@
 <template>
   <div class="about">
-      <h3 class="sectionTitle">About Galar</h3>
-      <p class="text">Lorem Ipsum - Hao write the damn thing yourself. Don't copy paste off of bulbapedia</p>
-      <!-- The Galar region is based off of the island of Great Britian, except rotated 180 degrees to appear upside down. The region is home to the legendary pokemon Eterantus, Zaican, and  -->
+    <h3 class="sectionTitle">About Galar</h3>
+    <p class="text">
+      bruh you try writing everthing without playing the game or watching the
+      anime
+    </p>
+    <!-- The Galar region is based off of the island of Great Britian, except rotated 180 degrees to appear upside down. The region is home to the legendary pokemon Eterantus, Zaican, and  -->
   </div>
 </template>
 
@@ -13,5 +16,7 @@ export default {
 </script>
 
 <style>
-
+.about {
+  background-color: var(--lightblue);
+}
 </style>
