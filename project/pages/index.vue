@@ -29,6 +29,12 @@ head,
   margin: 0;
   box-sizing: border-box;
 }
+.sectionTitle {
+  font-size: var(--h2);
+}
+.text {
+  font-size: var(--h5);
+}
 
 
 </style>
