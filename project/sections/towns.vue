@@ -68,7 +68,7 @@ export default {
         {
           name: "Wedgehurst",
           image:
-            "https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-switch/b/bb/Wedgehurst.png",
+            "https://images.nintendolife.com/84d99dc944dce/wedgehurst.900x.jpg",
           desc: "",
         },
       ],
@@ -83,5 +83,8 @@ export default {
   flex-flow: row nowrap;
   overflow-x: auto;
   overflow-y: none;
+}
+.towns {
+  background-color: var(--lightblue);
 }
 </style>
