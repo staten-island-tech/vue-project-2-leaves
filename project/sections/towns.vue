@@ -86,5 +86,7 @@ export default {
 }
 .towns {
   background-color: var(--lightblue);
+  scrollbar-color: rgb(110, 86, 4) rgb(80, 80, 80);
+  scrollbar-width: thin;
 }
 </style>

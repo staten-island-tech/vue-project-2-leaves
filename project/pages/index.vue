@@ -30,6 +30,7 @@ head,
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 .sectionTitle {
   font-size: var(--h2);

@@ -1,13 +1,9 @@
 <template>
   <div class="card">
-    <div class="card-front">
       <img class="card-image" :src="image" alt="" />
       <h5 class="cardTitle">{{ name }}</h5>
-    </div>
-    <!-- <div class="card-back">
-      <h5 class="cardTitle">{{ name }}</h5>
-      <p class="cardText">{{ description }}</p>
-    </div> -->
+      <!-- <p class="cardText">{{ description }}</p> -->
+      
   </div>
 </template>
 
@@ -20,18 +16,15 @@ export default {
     description: String,
   },
   // data() {
-  //   showCard: true;
-  //   showCard2: false;
+  //   trigger: false;
   // },
   // methods: {
   //   flip: function () {
-  //     if (this.showCard===true) {
-  //       this.showCard2 = true;
-  //       this.showCard = false;
+  //     if (this.trigger===false) {
+  //       this.trigger = true;
   //     }
   //     else {
-  //       this.showCard2 = false;
-  //       this.showCard = true;
+  //       this.trigger = false;
   //     }
   //   }
   // },
@@ -41,6 +34,8 @@ export default {
 <style>
 .card {
   margin: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
