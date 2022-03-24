@@ -4,6 +4,7 @@
     <About></About>
     <Towns></Towns>
     <Wild></Wild>
+    <Gym></Gym>
   </div>
 </template>
 <script>
@@ -11,6 +12,7 @@ import Header from "../sections/header.vue";
 import About from "../sections/about.vue";
 import Towns from "../sections/towns.vue";
 import Wild from "../sections/wild.vue";
+import Gym from '../sections/gym.vue';
 export default {
   name: "site",
   components: {
@@ -18,6 +20,7 @@ export default {
     About,
     Towns,
     Wild,
+    Gym,
   },
 };
 </script>
@@ -30,7 +33,6 @@ head,
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
 .sectionTitle {
   font-size: var(--h2);
@@ -40,5 +42,8 @@ head,
 }
 .source {
   font-size: var(--h5);
+}
+.sectionsubTitle {
+  font-size: var(--h3);
 }
 </style>
