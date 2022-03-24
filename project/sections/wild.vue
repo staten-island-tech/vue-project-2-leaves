@@ -1,5 +1,6 @@
 <template>
   <div class="wild">
+    <div class="part">
       <h4 class="sectionTitle">Wild Area</h4>
       <p class="text">
         The Wild Area (Japanese: ワイルドエリア Wild Area) is an extensive area
@@ -58,10 +59,15 @@
         players reach the appropriate milestone, even if the weather would not
         yet have reset otherwise.
       </p>
+
       <p class="source">
         Sources from https://bulbapedia.bulbagarden.net/wiki/Wild_Area
       </p>
-      <img src="https://cdn.mos.cms.futurecdn.net/gqi9P9kBKzDLsva2rffagn-1200-80.jpg" alt=""/>
+    </div>
+    <img
+      src="https://cdn.mos.cms.futurecdn.net/gqi9P9kBKzDLsva2rffagn-1200-80.jpg"
+      alt=""
+    />
   </div>
 </template>
 
@@ -73,6 +79,11 @@ export default {
 
 <style>
 .wild {
+  background-color: var(--lightblue);
+}
+.part {
+  float: left;
+  width: 50.5%;
   background-color: var(--lightblue);
 }
 img {
