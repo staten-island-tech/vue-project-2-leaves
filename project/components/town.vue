@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="town">
       <img class="card-image" :src="image" alt="" />
       <h5 class="cardTitle">{{ name }}</h5>
       <!-- <p class="cardText">{{ description }}</p> -->
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "Card",
+  name: "Town",
   props: {
     name: String,
     image: String,
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style>
-.card {
+.town {
   margin: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;

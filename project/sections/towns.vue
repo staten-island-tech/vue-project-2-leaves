@@ -2,23 +2,23 @@
   <div class="towns">
     <h4 class="sectionTitle">Towns</h4>
     <div class="display">
-      <Card
+      <Town
         v-for="town in towns"
         :key="town"
         :name="town.name"
         :image="town.image"
         :description="town.desc"
-      ></Card>
+      ></Town>
     </div>
   </div>
 </template>
 
 <script>
-import Card from "../components/card.vue";
+import Town from "../components/town.vue";
 export default {
   name: "Towns",
   components: {
-    Card,
+    Town,
   },
   data() {
     return {
