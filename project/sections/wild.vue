@@ -1,5 +1,5 @@
 <template>
-  <div class="wild">
+  <div class="wild section">
     <div class="part">
       <h4 class="sectionTitle">Wild Area</h4>
       <p class="text">
@@ -66,7 +66,7 @@
     </div>
     <img
       src="https://cdn.mos.cms.futurecdn.net/gqi9P9kBKzDLsva2rffagn-1200-80.jpg"
-      alt=""
+      alt="" class="wildImg"
     />
   </div>
 </template>
@@ -80,14 +80,17 @@ export default {
 <style>
 .wild {
   background-color: var(--lightblue);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .part {
-  float: left;
-  width: 50.5%;
-  background-color: var(--lightblue);
+  flex-basis: 40%;
 }
-img {
-  float: right;
-  width: 49.5%;
+.wildImg {
+  height: 600px;
+  width: 700px;
+  object-fit: cover;
 }
 </style>

@@ -54,7 +54,7 @@ export default {
   text-align: center;
   height: 100vh;
 
-  background-image: url("https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2019/02/pokemon-sword-and-shield-galar-closeup.jpg?itok=P4mZ-3Kl");
+  background-image: url("https://images.nintendolife.com/0cb4cd2bf797b/1280x720.jpg");
   background-size: cover;
 }
 </style>

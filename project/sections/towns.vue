@@ -1,7 +1,7 @@
 <template>
-  <div class="towns">
+  <div class="towns section">
     <h4 class="sectionTitle">Towns</h4>
-    <div class="display">
+    <div class="townsDisplay">
       <Town
         v-for="town in towns"
         :key="town"
@@ -78,15 +78,16 @@ export default {
 </script>
 
 <style>
-.display {
+.townsDisplay {
   display: flex;
   flex-flow: row nowrap;
   overflow-x: auto;
   overflow-y: none;
+  scrollbar-color: rgb(110, 86, 4) rgb(80, 80, 80);
+  scrollbar-width: thin;
 }
 .towns {
   background-color: var(--lightblue);
-  scrollbar-color: rgb(110, 86, 4) rgb(80, 80, 80);
-  scrollbar-width: thin;
+  
 }
 </style>

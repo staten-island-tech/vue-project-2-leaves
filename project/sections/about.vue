@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about section">
     <h3 class="sectionTitle">About Galar</h3>
     <p class="text">
       Galar is based on the United Kingdom. The main part of Galar focuses

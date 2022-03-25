@@ -1,6 +1,8 @@
 <template>
-  <div class="gyms">
-    <Gym
+  <div class="gyms section">
+    <h5 class="sectionTitle">Gyms</h5>
+    <div class="gymsDisplay">
+      <Gym
       v-for="gym in gyms"
       :key="gym"
       :name="gym.name"
@@ -11,8 +13,10 @@
       :leader="gym.leader"
       :dynamaxPokemon="gym.dynmax"
       :type="gym.specialty"
-    >
-    </Gym>
+      :leaderPic="gym.leaderimg"
+      >
+      </Gym>
+    </div>
   </div>
 </template>
 
@@ -173,4 +177,15 @@ export default {
 </script>
 
 <style>
+.gyms {
+  background-color: var(--lightblue);
+}
+.gymsDisplay {
+display: flex;
+flex-flow: row nowrap;
+overflow-x: auto;
+overflow-y: none;
+scrollbar-color: rgb(110, 86, 4) rgb(80, 80, 80);
+scrollbar-width: thin;
+}
 </style>
