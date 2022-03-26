@@ -12,7 +12,7 @@ import Header from "../sections/header.vue";
 import About from "../sections/about.vue";
 import Towns from "../sections/towns.vue";
 import Wild from "../sections/wild.vue";
-import Gyms from '../sections/gyms.vue';
+import Gym from "../sections/gyms.vue";
 export default {
   name: "site",
   components: {
@@ -20,7 +20,7 @@ export default {
     About,
     Towns,
     Wild,
-    Gyms,
+    Gym,
   },
 };
 </script>
