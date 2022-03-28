@@ -4,7 +4,7 @@
     <About></About>
     <Towns></Towns>
     <Wild></Wild>
-    <Gym></Gym>
+    <Gyms></Gyms>
   </div>
 </template>
 <script>
@@ -12,7 +12,7 @@ import Header from "../sections/header.vue";
 import About from "../sections/about.vue";
 import Towns from "../sections/towns.vue";
 import Wild from "../sections/wild.vue";
-import Gym from "../sections/gyms.vue";
+import Gyms from "../sections/gyms.vue";
 export default {
   name: "site",
   components: {
@@ -20,7 +20,7 @@ export default {
     About,
     Towns,
     Wild,
-    Gym,
+    Gyms,
   },
 };
 </script>
@@ -45,5 +45,21 @@ head,
 }
 .sectionsubTitle {
   font-size: var(--h3);
+}
+.cardTitle {
+  font-size: var(--h4);
+  color: aliceblue;
+}
+.cardText {
+  font-size: var(--h6);
+  color: aliceblue;
+}
+.card-image {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+.section {
+  padding: 1rem;
 }
 </style>

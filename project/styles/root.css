@@ -14,5 +14,12 @@
     --small: 0.8rem;
     --extraSmall: 0.64rem;
 
-    /* NOTE: if you can please set up color palettes for two themes, i was thinking a dark/neon theme and a red/blue theme, but we can have more */
+    /* default theme */
+    --color0: rgb(245, 253, 255);
+    --color1: rgb(224, 255, 253);
+    --color2: rgb(185, 240, 237);
+    --color3: rgb(119, 197, 193);
+    --color4: rgb(173, 173, 173);
+    --color5: rgba(119, 88, 2, 0.651);
+   
 }

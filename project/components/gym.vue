@@ -3,13 +3,13 @@
     <img class="card-image" :src="image" alt="" />
     <h5 class="cardTitle">{{ name }}</h5>
     <div class="gym info">
-      <h5>{{ location }}</h5>
-      <h5>{{ badge }}</h5>
-      <h5>{{ type }}</h5>
-      <h5>{{ leader }}</h5>
-      <img class="leader-image" :src="leaderimg" alt="" />
-      <h5>{{ pokemon }}</h5>
-      <h5>{{ dynamaxPokemon }}</h5>
+      <p class="cardText">Location: {{ location }}</p>
+      <p class="cardText">Badge: {{ badge }}</p>
+      <p class="cardText">Specialty: {{ type }}</p>
+      <p class="cardText">Leader: {{ leader }}</p>
+      <img class="leader-image" :src="leaderPic" alt="" />
+      <p class="cardText">Pokemon: {{ pokemon }}</p>
+      <p class="cardText">Dynamax Pokemon: {{ dynamaxPokemon }}</p>
     </div>
   </div>
 </template>
@@ -27,10 +27,17 @@ export default {
     badge: String,
     leader: String,
     dynamaxPokemon: String,
-    leaderimg: String,
+    leaderPic: String,
   },
 };
 </script>
 
 <style>
+.gym {
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: var(--darkblue);
+  flex-basis: 40%;
+}
 </style>

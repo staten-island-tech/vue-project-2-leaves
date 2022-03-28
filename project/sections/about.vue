@@ -30,6 +30,6 @@ export default {
 
 <style>
 .about {
-  background-color: var(--lightblue);
+  background-color: var(--color2);
 }
 </style>

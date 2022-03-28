@@ -178,14 +178,15 @@ export default {
 
 <style>
 .gyms {
-  background-color: var(--lightblue);
+  background-color: var(--color1);
 }
 .gymsDisplay {
   display: flex;
   flex-flow: row nowrap;
   overflow-x: auto;
   overflow-y: none;
-  scrollbar-color: rgb(110, 86, 4) rgb(80, 80, 80);
+  scrollbar-color: var(--color4) var(--color5);
   scrollbar-width: thin;
+  justify-content: space-between;
 }
 </style>
