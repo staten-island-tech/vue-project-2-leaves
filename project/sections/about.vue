@@ -15,7 +15,9 @@
       snow-covered mountains. Galar comprises a long mainland area as well as an
       outlying island area, the Isle of Armor, east of the mainland.
     </p>
-    <p class="source">sources:https://bulbapedia.bulbagarden.net/wiki/Galar</p>
+    <p class="source">
+      Sources from:https://bulbapedia.bulbagarden.net/wiki/Galar
+    </p>
     <!-- The Galar region is based off of the island of Great Britian, except rotated 180 degrees to appear upside down. The region is home to the legendary pokemon Eterantus, Zaican, and  -->
   </div>
 </template>

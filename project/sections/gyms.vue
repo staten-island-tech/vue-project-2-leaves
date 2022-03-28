@@ -3,17 +3,17 @@
     <h5 class="sectionTitle">Gyms</h5>
     <div class="gymsDisplay">
       <Gym
-      v-for="gym in gyms"
-      :key="gym"
-      :name="gym.name"
-      :location="gym.location"
-      :image="gym.image"
-      :pokemon="gym.pokemon"
-      :badge="gym.badge"
-      :leader="gym.leader"
-      :dynamaxPokemon="gym.dynmax"
-      :type="gym.specialty"
-      :leaderPic="gym.leaderimg"
+        v-for="gym in gyms"
+        :key="gym"
+        :name="gym.name"
+        :location="gym.location"
+        :image="gym.image"
+        :pokemon="gym.pokemon"
+        :badge="gym.badge"
+        :leader="gym.leader"
+        :dynamaxPokemon="gym.dynmax"
+        :type="gym.specialty"
+        :leaderPic="gym.leaderimg"
       >
       </Gym>
     </div>
@@ -35,7 +35,7 @@ export default {
           name: "Turffield",
           location: "Turf Town",
           image:
-            "https://static.wikia.nocookie.net/pokemon/images/6/67/Turffield_Stadium.png/revision/latest?cb=20191127144837",
+            "https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2019/02/pokemon-sword-shield-gym.jpg",
           badge: "Grass Badge",
           pokemon: ["Gossifleur", "Eldegoss"],
           leader: "Milo",
@@ -49,13 +49,13 @@ export default {
           name: "Hulbury",
           location: "Bow Town",
           image:
-            "https://static.wikia.nocookie.net/pokemon/images/5/5d/Hulbury_Stadium.png/revision/latest/top-crop/width/360/height/360?cb=20191127145706",
+            "https://video-game-guide-walkthrough.supersoluce.com/wp-content/uploads/2019/11/21/soluce-pokemon-epee-bouclier-skifford-025.jpg",
           badge: "Water Badge",
           pokemon: ["Goldeen", "Arrokuda", "Drednaw"],
           leader: "Nessa",
           leaderimg:
             "https://static.wikia.nocookie.net/pokemon/images/a/a1/Nessa_Masters.png/revision/latest/scale-to-width-down/220?cb=20210426180406",
-          dynmax: "Eldegoss",
+          dynmax: "Drednaw",
           specialty: "Water-Type",
         },
         {
@@ -77,7 +77,7 @@ export default {
           name: "Stow-on-Side",
           location: "Lateral Town",
           image:
-            "https://static.wikia.nocookie.net/pokemon/images/5/5c/Stow-on-Side_Ghost_Stadium.png/revision/latest?cb=20191127180056",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSviCfSRSW8UGKhiEfpfNvlxvn6Yoca5EStNA&usqp=CAU",
           badge: "Fighting Badge",
           pokemon: ["Hitmontop", "Pangoro", "Sirfetched", "Machamp"],
           leader: "Bea",
@@ -91,7 +91,7 @@ export default {
           name: "Stow-on-Side",
           location: "Lateral Town",
           image:
-            "https://static.wikia.nocookie.net/pokemon/images/5/5c/Stow-on-Side_Ghost_Stadium.png/revision/latest?cb=20191127180056",
+            "http://pm1.narvii.com/7463/1eeafaf7bc8ec345e4d3eab5c4465c5cc28d2d95r1-1024-642v2_uhq.jpg",
           badge: "Ghost Badge",
           pokemon: ["Yamask", "Mimikyu", "Cursola", "Gengar"],
           leader: "Allister",
@@ -105,7 +105,7 @@ export default {
           name: "Ballonlea",
           location: "Arabesque Town",
           image:
-            "https://static.wikia.nocookie.net/pokemon/images/4/48/Ballonlea_Stadium.png/revision/latest?cb=20191127152611",
+            "https://www.dailyesports.gg/wp-content/uploads/2020/04/Ballonlea-Gym.jpg",
           badge: "Fairy Badge",
           pokemon: ["Weezing", "Mawile", "Togekiss", "Alcremie"],
           leader: " Opal",
@@ -119,7 +119,7 @@ export default {
           name: "Circhester",
           location: "Circus Town",
           image:
-            "https://static.wikia.nocookie.net/pokemon/images/a/a4/Circhester_Stadium_Sword.png/revision/latest?cb=20201110050126",
+            "https://oyster.ignimgs.com/wordpress/stg.ign.com/2020/05/Shield_gym_ice.png?fit=bounds&width=1280&height=720",
           badge: "Ice Badge",
           pokemon: ["Frosmoth", "Darmanitan", "Eiscue", "Lapras"],
           leader: "Melony",
@@ -133,7 +133,7 @@ export default {
           name: "Circhester",
           location: "Circus Town",
           image:
-            "https://static.wikia.nocookie.net/pokemon/images/a/a4/Circhester_Stadium_Sword.png/revision/latest?cb=20201110050126",
+            "https://static1-us.millenium.gg/articles/1/91/11/@/101997-part13-article_m-2.png",
           badge: "Rock Badge",
           pokemon: ["Barbaracle", "Shuckle", "Stonjourner", "Coalossal"],
           leader: "Gordie",
@@ -181,11 +181,11 @@ export default {
   background-color: var(--lightblue);
 }
 .gymsDisplay {
-display: flex;
-flex-flow: row nowrap;
-overflow-x: auto;
-overflow-y: none;
-scrollbar-color: rgb(110, 86, 4) rgb(80, 80, 80);
-scrollbar-width: thin;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: auto;
+  overflow-y: none;
+  scrollbar-color: rgb(110, 86, 4) rgb(80, 80, 80);
+  scrollbar-width: thin;
 }
 </style>

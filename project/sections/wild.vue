@@ -66,7 +66,8 @@
     </div>
     <img
       src="https://cdn.mos.cms.futurecdn.net/gqi9P9kBKzDLsva2rffagn-1200-80.jpg"
-      alt="" class="wildImg"
+      alt=""
+      class="wildImg"
     />
   </div>
 </template>
@@ -90,7 +91,7 @@ export default {
 }
 .wildImg {
   height: 600px;
-  width: 700px;
+  width: 800px;
   object-fit: cover;
 }
 </style>
