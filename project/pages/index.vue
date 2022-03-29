@@ -54,7 +54,7 @@ head,
   font-size: var(--h6);
   color: aliceblue;
 }
-.card-image {
+.card-image{
   height: 250px;
   width: 250px;
   object-fit: cover;

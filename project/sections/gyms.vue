@@ -185,8 +185,9 @@ export default {
   flex-flow: row nowrap;
   overflow-x: auto;
   overflow-y: none;
-  scrollbar-color: var(--color4) var(--color5);
+  scrollbar-color: var(--color5) var(--color4);
   scrollbar-width: thin;
+
   justify-content: space-between;
 }
 </style>

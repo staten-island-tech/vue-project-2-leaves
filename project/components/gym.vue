@@ -1,15 +1,20 @@
 <template>
   <div class="gym">
-    <img class="card-image" :src="image" alt="" />
     <h5 class="cardTitle">{{ name }}</h5>
-    <div class="gym info">
-      <p class="cardText">Location: {{ location }}</p>
-      <p class="cardText">Badge: {{ badge }}</p>
-      <p class="cardText">Specialty: {{ type }}</p>
-      <p class="cardText">Leader: {{ leader }}</p>
-      <img class="leader-image" :src="leaderPic" alt="" />
-      <p class="cardText">Pokemon: {{ pokemon }}</p>
-      <p class="cardText">Dynamax Pokemon: {{ dynamaxPokemon }}</p>
+    <div class="gymInfo">
+      <div class="gymCardLeft">
+        <img class="card-image" :src="image" alt="" />
+        <p class="cardText">Location: {{ location }}</p>
+        <p class="cardText">Badge: {{ badge }}</p>
+        <p class="cardText">Specialty: {{ type }}</p>
+      </div>
+      <div class="gymCardRight">
+        <p class="cardText">Dynamax Pokemon: {{ dynamaxPokemon }}</p>
+        <p class="cardText">Pokemon:</p>
+        <p class="cardText" v-for="pokemon in pokemon" :key="pokemon">{{ pokemon }}</p>
+        <img class="leader-image" :src="leaderPic" alt="" />
+        <p class="cardText">Gym Leader: {{ leader }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -34,6 +39,9 @@ export default {
 
 <style>
 .gym {
+  margin: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -41,7 +49,19 @@ export default {
   flex-basis: 40%;
 }
 .leader-image {
+  margin-top: 1rem;
+  height: 150px;
   width: 200px;
-  height: 200px;
+  object-fit: cover;
+}
+.gymInfo {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.gymCardLeft {
+  margin-right: 1rem;
+}
+.gymCardRight {
+  margin-left: 1rem;
 }
 </style>
