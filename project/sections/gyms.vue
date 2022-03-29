@@ -40,7 +40,7 @@ export default {
           pokemon: ["Gossifleur", "Eldegoss"],
           leader: "Milo",
           leaderimg:
-            "https://static.wikia.nocookie.net/pokemon/images/b/bd/Milo_TW.png/revision/latest/scale-to-width-down/250?cb=20200218201330",
+            "https://cdn.vox-cdn.com/thumbor/Qgj_P-3D9j_eSeKu0qAS0TeYHZQ=/0x0:1280x720/1200x800/filters:focal(536x188:740x392)/cdn.vox-cdn.com/uploads/chorus_image/image/65705410/2019110523335000_3C66B776DB1AA06323037049FACD96D3.0.jpg",
           dynmax: "Eldegoss",
           specialty: "Grass-Type",
         },
@@ -54,7 +54,7 @@ export default {
           pokemon: ["Goldeen", "Arrokuda", "Drednaw"],
           leader: "Nessa",
           leaderimg:
-            "https://static.wikia.nocookie.net/pokemon/images/a/a1/Nessa_Masters.png/revision/latest/scale-to-width-down/220?cb=20210426180406",
+            "https://cdn.vox-cdn.com/thumbor/Y03QcfvpbCvJW49J1hbFvuiiTG4=/0x0:1920x1080/1200x800/filters:focal(815x249:1121x555)/cdn.vox-cdn.com/uploads/chorus_image/image/65705409/vlcsnap_2019_06_11_12h26m48s436.0.jpg",
           dynmax: "Drednaw",
           specialty: "Water-Type",
         },
@@ -68,7 +68,7 @@ export default {
           pokemon: ["Ninetales", "Arcanine", "Centiskorch"],
           leader: "Kabu",
           leaderimg:
-            "https://static.wikia.nocookie.net/pokemonlp-utomaikeru/images/3/3e/Sword_Shield_Kabu.png/revision/latest?cb=20191212021037",
+            "https://img.gamewith.net/img/bc6b58cce6c293ab618ebff8d39a1c1a.jpg",
           dynmax: "Centiskorch",
           specialty: "Fire-type",
         },
@@ -82,7 +82,7 @@ export default {
           pokemon: ["Hitmontop", "Pangoro", "Sirfetched", "Machamp"],
           leader: "Bea",
           leaderimg:
-            "https://static.wikia.nocookie.net/pokemon/images/a/a8/Bea_Masters.png/revision/latest/scale-to-width-down/188?cb=20210426180417",
+            "https://cdn.vox-cdn.com/thumbor/AVU-ktOc4io_2v6UPV2Uc5QIkZY=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18287550/chrome_2019_07_08_09_18_44.jpg",
           dynmax: "Machamp",
           specialty: "Fighting-Type",
         },
@@ -96,7 +96,7 @@ export default {
           pokemon: ["Yamask", "Mimikyu", "Cursola", "Gengar"],
           leader: "Allister",
           leaderimg:
-            "https://static.wikia.nocookie.net/pokemon/images/9/9a/Allister_TW.png/revision/latest/scale-to-width-down/243?cb=20200218201658",
+            "https://d.newsweek.com/en/full/1510559/pokemon-sword-shield-allister-gym-leader.jpg?w=1600&h=1600&q=88&f=01163c94f56a43a5d87fc32c583b3797",
           dynmax: "Gengar",
           specialty: "Ghost-Type",
         },
@@ -110,7 +110,7 @@ export default {
           pokemon: ["Weezing", "Mawile", "Togekiss", "Alcremie"],
           leader: " Opal",
           leaderimg:
-            "https://archives.bulbagarden.net/media/upload/3/37/VSOpal.png",
+            "https://img.gamewith.net/img/9abeb7bbdd9c687b6309ac7a622d6e90.jpg",
           dynmax: "Alcremie",
           specialty: "Fairy-Type",
         },
@@ -124,7 +124,7 @@ export default {
           pokemon: ["Frosmoth", "Darmanitan", "Eiscue", "Lapras"],
           leader: "Melony",
           leaderimg:
-            "https://archives.bulbagarden.net/media/upload/7/7e/VSMelony.png",
+            "https://cdn.vox-cdn.com/thumbor/Vzs2Ht-XJ4cgsmR7W7C8QEqnPEA=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19373478/2019110522453400_B8FAEF4816CAC2B76D11869B05CA7601.jpg",
           dynmax: "Lapras",
           specialty: "Ice-Type",
         },
@@ -138,7 +138,7 @@ export default {
           pokemon: ["Barbaracle", "Shuckle", "Stonjourner", "Coalossal"],
           leader: "Gordie",
           leaderimg:
-            "https://archives.bulbagarden.net/media/upload/6/6d/VSGordie.png",
+            "https://poketouch.files.wordpress.com/2019/12/gordie_pokemon_sword_and_shield.jpg?w=504",
           dynmax: "Coalossal",
           specialty: "Rock-Type",
         },
@@ -152,7 +152,7 @@ export default {
           pokemon: ["Scrafty", "Malamar", "Skuntank", "Obstagoon"],
           leader: "Piers",
           leaderimg:
-            "https://archives.bulbagarden.net/media/upload/7/77/VSPiers.png",
+            "https://cdn.vox-cdn.com/thumbor/5ygG3NhbqXz5UOHzBRM4uuN-peY=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19373756/2019111112335300_3C66B776DB1AA06323037049FACD96D3.jpg",
           dynmax: "Obstagoon",
           specialty: "Dark-Type",
         },
@@ -166,7 +166,7 @@ export default {
           pokemon: ["Gigalith", "Flygon", "Sandaconda", "Duraludon"],
           leader: "Raihan",
           leaderimg:
-            "https://archives.bulbagarden.net/media/upload/7/70/VSRaihan.png",
+            "https://res.cloudinary.com/lmn/image/upload/e_sharpen:100/f_auto,fl_lossy,q_auto/v1/gameskinnyc/c/h/a/champion-cup-raihan-team-c5cae.png",
           dynmax: "Duraludon",
           specialty: "Dragon-type",
         },

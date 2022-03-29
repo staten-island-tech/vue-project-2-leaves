@@ -2,6 +2,11 @@
   <div class="about section">
     <h3 class="sectionTitle">About Galar</h3>
     <p class="text">
+      The Galar region (Japanese: ガラル地方 Galar region) is a region of the
+      Pokémon world, and the eighth core series region to be introduced. It is
+      the setting of Pokémon Sword and Shield.
+    </p>
+    <p class="text">
       Galar is based on the United Kingdom. The main part of Galar focuses
       heavily on the island of Great Britain, especially England and (to a
       lesser extent) Wales. However, the orientation of the landmass is rotated

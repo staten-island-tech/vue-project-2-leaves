@@ -1,9 +1,8 @@
 <template>
   <div class="town">
-      <img class="card-image" :src="image" alt="" />
-      <h5 class="cardTitle">{{ name }}</h5>
-      <!-- <p class="cardText">{{ description }}</p> -->
-      
+    <img class="card-image" :src="image" alt="" />
+    <h5 class="cardTitle">{{ name }}</h5>
+    <!-- <p class="cardText">{{ description }}</p> -->
   </div>
 </template>
 
@@ -40,17 +39,18 @@ export default {
   padding-left: 2rem;
   padding-right: 2rem;
   background-color: var(--darkblue);
+  margin-bottom: 3rem;
 }
 .cardTitle {
-  font-size: var(--h4);
+  font-size: var(--h3);
   color: aliceblue;
 }
 .cardText {
   font-size: var(--h6);
 }
 .card-image {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   object-fit: cover;
 }
 </style>

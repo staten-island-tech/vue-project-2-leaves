@@ -40,4 +40,8 @@ export default {
   background-color: var(--darkblue);
   flex-basis: 40%;
 }
+.leader-image {
+  width: 200px;
+  height: 200px;
+}
 </style>
