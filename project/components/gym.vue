@@ -11,7 +11,9 @@
       <div class="gymCardRight">
         <p class="cardText">Dynamax Pokemon: {{ dynamaxPokemon }}</p>
         <p class="cardText">Pokemon:</p>
-        <p class="cardText" v-for="pokemon in pokemon" :key="pokemon">{{ pokemon }}</p>
+        <p class="cardText" v-for="pokemon in pokemon" :key="pokemon">
+          {{ pokemon }}
+        </p>
         <img class="leader-image" :src="leaderPic" alt="" />
         <p class="cardText">Gym Leader: {{ leader }}</p>
       </div>

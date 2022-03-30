@@ -110,7 +110,7 @@ export default {
           pokemon: ["Weezing", "Mawile", "Togekiss", "Alcremie"],
           leader: " Opal",
           leaderimg:
-            "https://img.gamewith.net/img/9abeb7bbdd9c687b6309ac7a622d6e90.jpg",
+            "https://static2.gamerantimages.com/wordpress/wp-content/uploads/2020/01/Pokemon-Sword-And-Shield-Fairy-Gym-Leader-Opal.jpg",
           dynmax: "Alcremie",
           specialty: "Fairy-Type",
         },

@@ -5,6 +5,7 @@
     <Towns></Towns>
     <Wild></Wild>
     <Gyms></Gyms>
+    <Dynamax></Dynamax>
   </div>
 </template>
 <script>
@@ -13,6 +14,7 @@ import About from "../sections/about.vue";
 import Towns from "../sections/towns.vue";
 import Wild from "../sections/wild.vue";
 import Gyms from "../sections/gyms.vue";
+import Dynamax from "../sections/Dynamax.vue";
 export default {
   name: "site",
   components: {
@@ -21,6 +23,7 @@ export default {
     Towns,
     Wild,
     Gyms,
+    Dynamax,
   },
 };
 </script>
@@ -51,10 +54,10 @@ head,
   color: aliceblue;
 }
 .cardText {
-  font-size: var(--h6);
+  font-size: var(--h5);
   color: aliceblue;
 }
-.card-image{
+.card-image {
   height: 250px;
   width: 250px;
   object-fit: cover;
