@@ -1,5 +1,5 @@
 <template>
-  <div class="about section">
+  <div class="about section" id="about">
     <h3 class="sectionTitle">About Galar</h3>
     <p class="text">
       The Galar region (Japanese: ガラル地方 Galar region) is a region of the

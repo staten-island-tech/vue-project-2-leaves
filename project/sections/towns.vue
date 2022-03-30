@@ -1,5 +1,5 @@
 <template>
-  <div class="towns section">
+  <div class="towns section" id="towns">
     <h4 class="sectionTitle">Towns</h4>
     <div class="townsDisplay">
       <Town
