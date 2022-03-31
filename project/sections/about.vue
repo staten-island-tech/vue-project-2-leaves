@@ -37,4 +37,5 @@ export default {
 .about {
   background-color: var(--color2);
 }
+
 </style>

@@ -20,9 +20,9 @@ export default {
   name: "Header",
   methods: {
     navigate: function () {
-      this.$emit('navigate', this.id);
-    }
-  }
+      this.$emit("navigate", this.id);
+    },
+  },
 };
 </script>
 
@@ -54,6 +54,8 @@ export default {
 }
 .button:hover {
   transform: scaleX(1.2);
+  background-color: black;
+  color: antiquewhite;
 }
 .map {
   text-align: center;
