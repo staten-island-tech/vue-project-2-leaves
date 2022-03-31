@@ -1,11 +1,11 @@
 <template>
   <div class="site">
-    <Header @navigate="navigateTo"></Header>
+    <Header @trigger="navigateTo"></Header>
     <About></About>
     <Towns></Towns>
     <Wild></Wild>
     <Gyms></Gyms>
-    <!--<Dynamax></Dynamax>-->
+    <Dynamax></Dynamax>
   </div>
 </template>
 <script>
@@ -14,7 +14,7 @@ import About from "../sections/about.vue";
 import Towns from "../sections/towns.vue";
 import Wild from "../sections/wild.vue";
 import Gyms from "../sections/gyms.vue";
-//import Dynamax from "../sections/Dynamax.vue";
+import Dynamax from "../sections/dyna.vue";
 export default {
   name: "site",
   components: {
@@ -23,11 +23,11 @@ export default {
     Towns,
     Wild,
     Gyms,
-    //Dynamax,
+    Dynamax,
   },
   methods: {
-    navigateTo: function (id) {
-      document.getElementById(id).scrollIntoView(about);
+    navigateTo: function (n) {
+      document.getElementById(n).scrollIntoView();
     },
   },
 };
