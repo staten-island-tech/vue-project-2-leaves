@@ -190,4 +190,11 @@ export default {
 
   justify-content: space-between;
 }
+.gym:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+.gym:not(:hover) {
+  transform: scale(0.8);
+}
 </style>

@@ -88,6 +88,12 @@ export default {
 }
 .towns {
   background-color: var(--color1);
-  
+}
+.town:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+.town:not(:hover) {
+  transform: scale(0.8);
 }
 </style>

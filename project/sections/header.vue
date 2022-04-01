@@ -4,12 +4,22 @@
       <h1 class="g">Galar Region</h1>
     </div>
     <div class="directory">
-      <button class="button" v-on:click="navigate" :position="sections[0]">About</button>
-      <button class="button" v-on:click="navigate" :position="sections[1]">Town</button>
-      <button class="button" v-on:click="navigate" :position="sections[2]">Wild Area</button>
-      <button class="button" v-on:click="navigate" :position="sections[3]">Gyms</button>
-      <button class="button" v-on:click="navigate" :position="sections[4]">Dynmax</button>
-      <button class="button">Theme</button>
+      <button class="button" v-on:click="navigate" :position="sections[0]">
+        About
+      </button>
+      <button class="button" v-on:click="navigate" :position="sections[1]">
+        Town
+      </button>
+      <button class="button" v-on:click="navigate" :position="sections[2]">
+        Wild Area
+      </button>
+      <button class="button" v-on:click="navigate" :position="sections[3]">
+        Gyms
+      </button>
+      <button class="button" v-on:click="navigate" :position="sections[4]">
+        Dynmax
+      </button>
+      <button class="button" id="theme">Theme</button>
     </div>
     <div class="map"></div>
   </div>
@@ -21,21 +31,15 @@ export default {
   methods: {
     navigate: function () {
       const n = this.position;
-      console.log(n)
+      console.log(n);
       // this.$emit('trigger', n);
     },
   },
-  data () {
+  data() {
     return {
-      sections: [
-        "about",
-        "town",
-        "wild",
-        "gyms",
-        "dynamax",
-      ]  
-    }
-  }
+      sections: ["about", "town", "wild", "gyms", "dynamax"],
+    };
+  },
 };
 </script>
 
@@ -68,7 +72,7 @@ export default {
 .button:hover {
   transform: scaleX(1.2);
   background-color: black;
-  color: antiquewhite;
+  color: var(--color6);
 }
 .map {
   text-align: center;

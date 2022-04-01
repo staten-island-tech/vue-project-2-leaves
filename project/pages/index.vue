@@ -73,4 +73,8 @@ head,
 .section {
   padding: 1rem;
 }
+.theme1 {
+  background-color: var(--color7);
+  color: var(--color6);
+}
 </style>
