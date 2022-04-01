@@ -4,19 +4,17 @@
       <h1 class="g">Galar Region</h1>
     </div>
     <div class="directory">
-      <button class="button" v-on:click="navigate" :position="sections[0]">
-        About
-      </button>
-      <button class="button" v-on:click="navigate" :position="sections[1]">
+      <button class="button" v-on:click="navigateAbout">About</button>
+      <button class="button" v-on:click="navigateTown">
         Town
       </button>
-      <button class="button" v-on:click="navigate" :position="sections[2]">
+      <button class="button" v-on:click="navigateWild">
         Wild Area
       </button>
-      <button class="button" v-on:click="navigate" :position="sections[3]">
+      <button class="button" v-on:click="navigateGyms">
         Gyms
       </button>
-      <button class="button" v-on:click="navigate" :position="sections[4]">
+      <button class="button" v-on:click="navigateDynamax">
         Dynmax
       </button>
       <button class="button" id="theme">Theme</button>
@@ -29,20 +27,29 @@
 export default {
   name: "Header",
   methods: {
-    navigate: function () {
-      const n = this.position;
-      console.log(n);
-      // this.$emit('trigger', n);
+    navigateAbout: function () {
+      this.$emit('trigger1');
+    },
+    navigateTown: function () {
+      this.$emit('trigger2');
+    },
+    navigateWild: function () {
+      this.$emit('trigger3');
+    },
+    navigateGyms: function () {
+      this.$emit('trigger4');
+    },
+    navigateDynamax: function () {
+      this.$emit('trigger5');
     },
   },
   data() {
     return {
       sections: ["about", "town", "wild", "gyms", "dynamax"],
-    };
+    }
   },
-};
+}
 </script>
-
 <style>
 .title {
   background: #3f0000;
@@ -77,7 +84,6 @@ export default {
 .map {
   text-align: center;
   height: 100vh;
-
   background-image: url("https://images.nintendolife.com/0cb4cd2bf797b/1280x720.jpg");
   background-size: cover;
 }

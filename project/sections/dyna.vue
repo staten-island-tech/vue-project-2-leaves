@@ -41,17 +41,14 @@
         Sources from https://bulbapedia.bulbagarden.net/wiki/Dynamax~
       </p>
     </div>
-    <div class="cards">
       <div class="cardTitle">Dynamax</div>
-      <img src="https://pbs.twimg.com/media/D-9K9YpU4AASdVa.jpg" alt="" />
-    </div>
-    <div class="cards">
+      <img src="https://pbs.twimg.com/media/D-9K9YpU4AASdVa.jpg" alt="" class="dynaImg" />
       <div class="cardTitle">Gigantamax</div>
       <img
         src="https://images.gnwcdn.com/2019/articles/2019-07-08-15-43/new-pokemon-alcremie-looks-like-a-cake-attacks-by-squirting-whipped-cream-1562596998144.jpg/EG11/resize/1200x-1/new-pokemon-alcremie-looks-like-a-cake-attacks-by-squirting-whipped-cream-1562596998144.jpg"
-        alt=""
+        alt="" class="dynaImg"
       />
-    </div>
+    
   </div>
 </template>
 
@@ -64,5 +61,10 @@ export default {
 <style>
 .Dynamax {
   background-color: var(--lightblue);
+}
+.dynaImg {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
 }
 </style>
