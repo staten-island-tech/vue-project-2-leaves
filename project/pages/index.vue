@@ -77,4 +77,8 @@ head,
   background-color: var(--color7);
   color: var(--color6);
 }
+.theme2 {
+  background-color: var(--color5);
+  color: var(--color0);
+}
 </style>

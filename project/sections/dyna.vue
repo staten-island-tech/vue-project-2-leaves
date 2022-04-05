@@ -41,14 +41,24 @@
         Sources from https://bulbapedia.bulbagarden.net/wiki/Dynamax~
       </p>
     </div>
-      <div class="cardTitle">Dynamax</div>
-      <img src="https://pbs.twimg.com/media/D-9K9YpU4AASdVa.jpg" alt="" class="dynaImg" />
-      <div class="cardTitle">Gigantamax</div>
-      <img
-        src="https://images.gnwcdn.com/2019/articles/2019-07-08-15-43/new-pokemon-alcremie-looks-like-a-cake-attacks-by-squirting-whipped-cream-1562596998144.jpg/EG11/resize/1200x-1/new-pokemon-alcremie-looks-like-a-cake-attacks-by-squirting-whipped-cream-1562596998144.jpg"
-        alt="" class="dynaImg"
-      />
-    
+    <div class="dynacard">
+      <div>
+        <div class="cardTitle2">Dynamax</div>
+        <img
+          src="https://pbs.twimg.com/media/D-9K9YpU4AASdVa.jpg"
+          alt=""
+          class="dynaImg"
+        />
+      </div>
+      <div>
+        <div class="cardTitle2">Gigantamax</div>
+        <img
+          src="https://images.gnwcdn.com/2019/articles/2019-07-08-15-43/new-pokemon-alcremie-looks-like-a-cake-attacks-by-squirting-whipped-cream-1562596998144.jpg/EG11/resize/1200x-1/new-pokemon-alcremie-looks-like-a-cake-attacks-by-squirting-whipped-cream-1562596998144.jpg"
+          alt=""
+          class="dynaImg"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -66,5 +76,16 @@ export default {
   height: 300px;
   width: 300px;
   object-fit: cover;
+}
+.cardTitle2 {
+  color: 000;
+  font-size: var(--h4);
+}
+.dynacard {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-left: 50rem;
+  margin-right: 50rem;
+  justify-content: space-between;
 }
 </style>
