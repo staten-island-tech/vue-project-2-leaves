@@ -1,5 +1,5 @@
 <template>
-  <div class="Dynamax section">
+  <div class="dynamax section">
     <div class="part">
       <div class="sectionTitle">Dynamax and Gigantamax</div>
       <p class="text">
@@ -69,7 +69,7 @@ export default {
 </script>
 
 <style>
-.Dynamax {
+.dynamax {
   background-color: var(--lightblue);
 }
 .dynaImg {

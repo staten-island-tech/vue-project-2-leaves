@@ -15,6 +15,7 @@ import Towns from "../sections/towns.vue";
 import Wild from "../sections/wild.vue";
 import Gyms from "../sections/gyms.vue";
 import Dynamax from "../sections/dyna.vue";
+import Footer from "../sections/footer.vue";
 export default {
   name: "site",
   components: {
@@ -24,6 +25,7 @@ export default {
     Wild,
     Gyms,
     Dynamax,
+    Footer,
   },
   methods: {
     navigateTo: function (n) {
