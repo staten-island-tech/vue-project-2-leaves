@@ -1,25 +1,24 @@
 <template>
   <div class="header">
-    <div class="title">
-      <h1 class="g">Galar Region</h1>
-    </div>
-    <div class="directory">
-      <button class="button" v-on:click="navigate" :id="about">About</button>
-      <button class="button" v-on:click="navigate" :id="towns">
-        Towns
-      </button>
-      <button class="button" v-on:click="navigate" :id="wild">
-        Wild Area
-      </button>
-      <button class="button" v-on:click="navigate" :id="gyms">
-        Gyms
-      </button>
-      <button class="button" v-on:click="navigate" :id="dynamax">
-        Dynmax
-      </button>
-      <button class="button" id="theme">Theme</button>
-    </div>
-    <div class="map"></div>
+    <section id="home">
+      <div class="title">
+        <h1 class="g">Galar Region</h1>
+      </div>
+      <div class="directory">
+        <button class="button" v-on:click="navigate" :id="about">About</button>
+        <button class="button" v-on:click="navigate" :id="towns">Towns</button>
+        <button class="button" v-on:click="navigate" :id="wild">
+          Wild Area
+        </button>
+        <button class="button" v-on:click="navigate" :id="gyms">Gyms</button>
+        <button class="button" v-on:click="navigate" :id="dynamax">
+          Dynmax
+        </button>
+        <button class="button" id="theme">Theme</button>
+      </div>
+      <div class="map"></div>
+      <div></div>
+    </section>
   </div>
 </template>
 
@@ -28,11 +27,10 @@ export default {
   name: "Header",
   methods: {
     navigate: function () {
-      this.$emit('trigger', this.id);
+      this.$emit("trigger", this.id);
     },
   },
-  
-}
+};
 </script>
 <style>
 .title {

@@ -1,11 +1,13 @@
 <template>
   <div class="site">
-    <Header @trigger="navigateTo"></Header>
-    <About></About>
-    <Towns></Towns>
-    <Wild></Wild>
-    <Gyms></Gyms>
-    <Dynamax></Dynamax>
+    <div>
+      <Header @trigger="navigateTo"></Header>
+      <About></About>
+      <Towns></Towns>
+      <Wild></Wild>
+      <Gyms></Gyms>
+      <Dynamax></Dynamax>
+    </div>
   </div>
 </template>
 <script>
@@ -29,7 +31,7 @@ export default {
   },
   methods: {
     navigateTo: function (n) {
-      document.getElementById(n).scrollIntoView();
+      document.getElementById(n).scrollIntoView(Id);
     },
   },
 };
