@@ -6,12 +6,11 @@
         @trigger2="navigateTotown"
         @trigger3="navigateTowild"
       ></Header>
-      <!-- <About></About>
+      <About></About>
       <Towns></Towns>
       <Wild></Wild>
       <Gyms></Gyms>
       <Dynamax></Dynamax>
-      <Footer></Footer> -->
     </div>
   </div>
 </template>
@@ -60,5 +59,40 @@ head,
 .site {
   scroll-behavior: smooth;
 }
-
+.sectionTitle {
+  font-size: var(--h2);
+}
+.text {
+  font-size: var(--h4);
+}
+.source {
+  font-size: var(--h5);
+}
+.sectionsubTitle {
+  font-size: var(--h3);
+}
+.cardTitle {
+  font-size: var(--h4);
+  color: aliceblue;
+}
+.cardText {
+  font-size: var(--h5);
+  color: aliceblue;
+}
+.card-image {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+.section {
+  padding: 1rem;
+}
+.theme1 {
+  background-color: var(--color7);
+  color: var(--color6);
+}
+.theme2 {
+  background-color: var(--color5);
+  color: var(--color0);
+}
 </style>
