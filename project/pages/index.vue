@@ -1,7 +1,11 @@
 <template>
   <div class="site">
     <div>
-      <Header @trigger="navigateTo"></Header>
+      <Header
+        @trigger="navigateToabout"
+        @trigger2="navigateTotown"
+        @trigger3="navigateTowild"
+      ></Header>
       <About></About>
       <Towns></Towns>
       <Wild></Wild>
@@ -30,8 +34,14 @@ export default {
     Footer,
   },
   methods: {
-    navigateTo: function (n) {
-      document.getElementById(n).scrollIntoView(Id);
+    navigateToabout: function (n) {
+      document.getElementById("about").scrollIntoView("about");
+    },
+    navigateTotown: function (n) {
+      document.getElementById("towns").scrollIntoView("towns");
+    },
+    navigateTowild: function (n) {
+      document.getElementById("wild").scrollIntoView("wild");
     },
   },
 };

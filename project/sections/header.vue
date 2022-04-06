@@ -5,9 +5,9 @@
         <h1 class="g">Galar Region</h1>
       </div>
       <div class="directory">
-        <button class="button" v-on:click="navigate" :id="about">About</button>
-        <button class="button" v-on:click="navigate" :id="towns">Towns</button>
-        <button class="button" v-on:click="navigate" :id="wild">
+        <button class="button" v-on:click="navigate1" :id="about">About</button>
+        <button class="button" v-on:click="navigate2" :id="towns">Towns</button>
+        <button class="button" v-on:click="navigate3" :id="wild">
           Wild Area
         </button>
         <button class="button" v-on:click="navigate" :id="gyms">Gyms</button>
@@ -26,8 +26,14 @@
 export default {
   name: "Header",
   methods: {
-    navigate: function () {
+    navigate1: function () {
       this.$emit("trigger", this.id);
+    },
+    navigate2: function () {
+      this.$emit("trigger2", this.id);
+    },
+    navigate3: function () {
+      this.$emit("trigger3", this.id);
     },
   },
 };
