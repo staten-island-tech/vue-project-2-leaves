@@ -10,8 +10,8 @@
         <button class="button" v-on:click="navigate3" :id="wild">
           Wild Area
         </button>
-        <button class="button" v-on:click="navigate" :id="gyms">Gyms</button>
-        <button class="button" v-on:click="navigate" :id="dynamax">
+        <button class="button" v-on:click="navigate4" :id="gyms">Gyms</button>
+        <button class="button" v-on:click="navigate5" :id="dynamax">
           Dynmax
         </button>
         <button class="button" id="theme">Theme</button>

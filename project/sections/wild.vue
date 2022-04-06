@@ -1,5 +1,5 @@
 <template>
-  <div class="wild section">
+  <div class="wild section" id="wild">
     <div class="part">
       <h4 class="sectionTitle">Wild Area</h4>
       <p class="text">

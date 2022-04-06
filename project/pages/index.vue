@@ -5,6 +5,7 @@
         @trigger="navigateToabout"
         @trigger2="navigateTotown"
         @trigger3="navigateTowild"
+        @trigger4="navigatetogym"
       ></Header>
       <About></About>
       <Towns></Towns>
@@ -42,6 +43,9 @@ export default {
     },
     navigateTowild: function (n) {
       document.getElementById("wild").scrollIntoView("wild");
+    },
+    navigateTogym: function (n) {
+      document.getElementById("gyms").scrollIntoView("gyms");
     },
   },
 };
