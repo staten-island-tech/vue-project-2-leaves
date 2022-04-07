@@ -2,11 +2,11 @@
   <div class="site">
     <div>
       <Header
-        @trigger="navigateToabout"
-        @trigger2="navigateTotown"
-        @trigger3="navigateTowild"
-        @trigger4="navigateTogym"
-        @trigger5="navigateTodynamax"
+        @trigger="navigateAbout"
+        @trigger2="navigateTowns"
+        @trigger3="navigateWild"
+        @trigger4="navigateGyms"
+        @trigger5="navigateDynamax"
       ></Header>
       <About></About>
       <Towns></Towns>
@@ -36,19 +36,19 @@ export default {
     Footer,
   },
   methods: {
-    navigateToabout: function (n) {
+    navigateAbout: function (n) {
       document.getElementById("about").scrollIntoView("about");
     },
-    navigateTotown: function (n) {
+    navigateTowns: function (n) {
       document.getElementById("towns").scrollIntoView("towns");
     },
-    navigateTowild: function (n) {
+    navigateWild: function (n) {
       document.getElementById("wild").scrollIntoView("wild");
     },
-    navigateTogym: function (n) {
-      document.getElementById("gympart").scrollIntoView("gympart");
+    navigateGyms: function (n) {
+      document.getElementById("gyms").scrollIntoView("gyms");
     },
-    navigateTodynamax: function (n) {
+    navigateDynamax: function (n) {
       document.getElementById("dynamax").scrollIntoView("dynamax");
     },
   },
@@ -70,24 +70,16 @@ head,
 .sectionTitle {
   font-size: var(--h2);
 }
-.text {
+.text, .cardTitle {
   font-size: var(--h4);
 }
-.source {
+.source, .cardText {
   font-size: var(--h5);
 }
 .sectionsubTitle {
   font-size: var(--h3);
 }
-.cardTitle {
-  font-size: var(--h4);
-  color: aliceblue;
-}
-.cardText {
-  font-size: var(--h5);
-  color: aliceblue;
-}
-.card-image {
+.cardImage {
   height: 250px;
   width: 250px;
   object-fit: cover;

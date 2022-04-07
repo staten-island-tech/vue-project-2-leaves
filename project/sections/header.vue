@@ -56,6 +56,7 @@ export default {
 .navbar {
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 .title {
   background: #3f0000;

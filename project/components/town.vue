@@ -1,6 +1,6 @@
 <template>
   <div class="town">
-      <img class="card-image" :src="image" alt="" />
+      <img class="cardImage" :src="image" alt="" />
       <h5 class="cardTitle">{{ name }}</h5>
       <!-- <p class="cardText">{{ description }}</p> -->
       

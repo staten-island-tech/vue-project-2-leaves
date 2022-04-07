@@ -3,7 +3,7 @@
     <h5 class="cardTitle">{{ name }}</h5>
     <div class="gymInfo">
       <div class="gymCardLeft">
-        <img class="card-image" :src="image" alt="" />
+        <img class="cardImage" :src="image" alt="" />
         <p class="cardText">Location: {{ location }}</p>
         <p class="cardText">Badge: {{ badge }}</p>
         <p class="cardText">Specialty: {{ type }}</p>
