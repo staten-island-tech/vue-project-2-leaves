@@ -1,5 +1,5 @@
 <template>
-  <div class="gyms section" id="gyms">
+  <div class="gyms section" id="gympart">
     <h5 class="sectionTitle">Gyms</h5>
     <div class="gymsDisplay">
       <Gym

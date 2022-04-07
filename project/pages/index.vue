@@ -5,7 +5,8 @@
         @trigger="navigateToabout"
         @trigger2="navigateTotown"
         @trigger3="navigateTowild"
-        @trigger4="navigatetogym"
+        @trigger4="navigateTogym"
+        @trigger5="navigateTodynamax"
       ></Header>
       <About></About>
       <Towns></Towns>
@@ -45,7 +46,10 @@ export default {
       document.getElementById("wild").scrollIntoView("wild");
     },
     navigateTogym: function (n) {
-      document.getElementById("gyms").scrollIntoView("gyms");
+      document.getElementById("gympart").scrollIntoView("gympart");
+    },
+    navigateTodynamax: function (n) {
+      document.getElementById("dynamax").scrollIntoView("dynamax");
     },
   },
 };

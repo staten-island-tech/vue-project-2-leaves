@@ -1,20 +1,28 @@
 <template>
   <div class="header">
     <section id="home">
-      <div class="title">
-        <h1 class="g">Galar Region</h1>
-      </div>
-      <div class="directory">
-        <button class="button" v-on:click="navigate1" :id="about">About</button>
-        <button class="button" v-on:click="navigate2" :id="towns">Towns</button>
-        <button class="button" v-on:click="navigate3" :id="wild">
-          Wild Area
-        </button>
-        <button class="button" v-on:click="navigate4" :id="gyms">Gyms</button>
-        <button class="button" v-on:click="navigate5" :id="dynamax">
-          Dynmax
-        </button>
-        <button class="button" id="theme">Theme</button>
+      <div class="navbar">
+        <div class="title">
+          <h1 class="g">Galar Region</h1>
+        </div>
+        <div class="directory">
+          <button class="button" v-on:click="navigate1" :id="about">
+            About
+          </button>
+          <button class="button" v-on:click="navigate2" :id="towns">
+            Towns
+          </button>
+          <button class="button" v-on:click="navigate3" :id="wild">
+            Wild Area
+          </button>
+          <button class="button" v-on:click="navigate4" :id="gympart">
+            Gyms
+          </button>
+          <button class="button" v-on:click="navigate5" :id="dynamax">
+            Dynmax
+          </button>
+          <button class="button" id="theme">Theme</button>
+        </div>
       </div>
       <div class="map"></div>
       <div></div>
@@ -35,10 +43,20 @@ export default {
     navigate3: function () {
       this.$emit("trigger3", this.id);
     },
+    navigate4: function () {
+      this.$emit("trigger4", this.id);
+    },
+    navigate5: function () {
+      this.$emit("trigger5", this.id);
+    },
   },
 };
 </script>
 <style>
+.navbar {
+  position: fixed;
+  width: 100%;
+}
 .title {
   background: #3f0000;
   text-align: center;
