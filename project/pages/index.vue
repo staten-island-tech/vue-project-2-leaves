@@ -7,6 +7,7 @@
         @trigger3="navigateWild"
         @trigger4="navigateGyms"
         @trigger5="navigateDynamax"
+        @themeswitch="themeswitcher"
       ></Header>
       <About></About>
       <Towns></Towns>
@@ -51,6 +52,13 @@ export default {
     navigateDynamax: function (n) {
       document.getElementById("dynamax").scrollIntoView("dynamax");
     },
+    themeswitcher: function (n) {
+      if (this.theme === "theme1") {
+        this.theme === "theme2";
+      } else {
+        this.theme === "theme2";
+      }
+    },
   },
 };
 </script>
@@ -70,10 +78,12 @@ head,
 .sectionTitle {
   font-size: var(--h2);
 }
-.text, .cardTitle {
+.text,
+.cardTitle {
   font-size: var(--h4);
 }
-.source, .cardText {
+.source,
+.cardText {
   font-size: var(--h5);
 }
 .sectionsubTitle {

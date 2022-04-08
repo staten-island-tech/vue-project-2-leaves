@@ -93,5 +93,4 @@ export default {
   transform: scale(1.03);
   transition-duration: 0.1s;
 }
-
 </style>

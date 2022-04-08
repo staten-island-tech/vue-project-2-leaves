@@ -21,7 +21,7 @@
           <button class="button" v-on:click="navigate5" :id="dynamax">
             Dynmax
           </button>
-          <button class="button" id="theme">Theme</button>
+          <button class="button" v-on:click="themeswitch" :id="theme">Theme</button>
         </div>
       </div>
       <div class="map"></div>
