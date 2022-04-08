@@ -1,20 +1,38 @@
 <template>
-  <div class="hi">
-    <h1 class="g">hi</h1>
-    <NuxtLogo></NuxtLogo>
+  <div class="site">
+    <div class="title">
+      <h1 class="g">Galar Region</h1>
+      <img class="map" src="https://images.nintendolife.com/0cb4cd2bf797b/1280x720.jpg" alt="">
+    </div>
+    <div>
+      <NavBar
+        @trigger="navigateAbout"
+        @trigger2="navigateTowns"
+        @trigger3="navigateWild"
+        @trigger4="navigateGyms"
+        @trigger5="navigateDynamax"
+        @themeswitch="themeswitcher"
+      ></NavBar>
+      <About></About>
+      <Towns></Towns>
+      <Wild></Wild>
+      <Gyms></Gyms>
+      <Dynamax></Dynamax>
+    </div>
   </div>
 </template>
-
 <script>
+import NavBar from "../components/navbar.vue";
+import About from "../sections/about.vue";
+import Towns from "../sections/towns.vue";
+import Wild from "../sections/wild.vue";
+import Gyms from "../sections/gyms.vue";
+import Dynamax from "../sections/dyna.vue";
+import Footer from "../sections/footer.vue";
 export default {
-<<<<<<< Updated upstream
-  components: {},
-  
-}
-=======
   name: "site",
   components: {
-    Header,
+    NavBar,
     About,
     Towns,
     Wild,
@@ -23,26 +41,32 @@ export default {
     Footer,
   },
   methods: {
-    navigateTo: function (n) {
-      document.getElementById("about").scrollIntoView();
+    navigateAbout: function (n) {
+      document.getElementById("about").scrollIntoView("about");
+    },
+    navigateTowns: function (n) {
+      document.getElementById("towns").scrollIntoView("towns");
+    },
+    navigateWild: function (n) {
+      document.getElementById("wild").scrollIntoView("wild");
+    },
+    navigateGyms: function (n) {
+      document.getElementById("gyms").scrollIntoView("gyms");
+    },
+    navigateDynamax: function (n) {
+      document.getElementById("dynamax").scrollIntoView("dynamax");
+    },
+    themeswitcher: function (n) {
+      if (this.theme === "theme1") {
+        this.theme === "theme2";
+      } else {
+        this.theme === "theme2";
+      }
     },
   },
 };
->>>>>>> Stashed changes
 </script>
-
 <style>
-<<<<<<< Updated upstream
-  @import '../styles/root.css';
-  body, head {
-    background-color: var(--neonblue);
-  }
-  .hi {
-    height: 100vh;
-    background-color: var(--lightblue);
-  }
-</style>
-=======
 @import "../styles/root.css";
 body,
 head,
@@ -51,38 +75,22 @@ head,
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  text-align: center;
 }
 .site {
-  background-image: linear-gradient(90deg, var(--color1), var(--color2), var(--color3), var(--color4), var(--color5), var(--color6), var(--color7), var(--color8), var(--color9));
+  scroll-behavior: smooth;
 }
-.sectionTitle {
-  font-size: var(--h2);
-}
-.text {
-  font-size: var(--h4);
-}
-.source {
-  font-size: var(--h5);
-}
-.sectionsubTitle {
-  font-size: var(--h3);
-}
-.cardTitle {
-  font-size: var(--h4);
-  color: aliceblue;
-}
-.cardText {
-  font-size: var(--h5);
-  color: aliceblue;
-}
-.card-image {
-  height: 250px;
-  width: 250px;
+.map {
+  height: 400px;
+  width: 600px;
   object-fit: cover;
 }
-.section {
-  padding: 1rem;
+/* .theme1 {
+  background-color: var(--color7);
+  color: var(--color6);
 }
+.theme2 {
+  background-color: var(--color5);
+  color: var(--color0);
+} */
 </style>
->>>>>>> Stashed changes

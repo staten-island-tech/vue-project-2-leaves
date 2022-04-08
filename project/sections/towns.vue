@@ -78,20 +78,5 @@ export default {
 </script>
 
 <style>
-.townsDisplay {
-  display: flex;
-  flex-flow: row nowrap;
-  overflow-x: auto;
-  overflow-y: none;
-  scrollbar-color: var(--color5) var(--color4);
-  scrollbar-width: thin;
-}
-.towns {
-  background-color: var(--color1);
-}
-.town:hover {
-  transform: scale(1.03);
-  transition-duration: 0.1s;
-}
 
 </style>

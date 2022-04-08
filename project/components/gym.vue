@@ -40,30 +40,5 @@ export default {
 </script>
 
 <style>
-.gym {
-  margin: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  background-color: var(--darkblue);
-  flex-basis: 40%;
-}
-.leader-image {
-  margin-top: 1rem;
-  height: 150px;
-  width: 200px;
-  object-fit: cover;
-}
-.gymInfo {
-  display: flex;
-  flex-flow: row nowrap;
-}
-.gymCardLeft {
-  margin-right: 1rem;
-}
-.gymCardRight {
-  margin-left: 1rem;
-}
+
 </style>

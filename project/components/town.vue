@@ -32,13 +32,5 @@ export default {
 </script>
 
 <style>
-.town {
-  margin: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  background-color: var(--darkblue);
-}
+
 </style>

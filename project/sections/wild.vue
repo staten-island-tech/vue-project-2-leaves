@@ -79,19 +79,5 @@ export default {
 </script>
 
 <style>
-.wild {
-  background-color: var(--color2);
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.part {
-  flex-basis: 40%;
-}
-.wildImg {
-  height: 600px;
-  width: 800px;
-  object-fit: cover;
-}
+
 </style>

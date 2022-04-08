@@ -69,23 +69,5 @@ export default {
 </script>
 
 <style>
-.dynamax {
-  background-color: var(--lightblue);
-}
-.dynaImg {
-  height: 300px;
-  width: 300px;
-  object-fit: cover;
-}
-.cardTitle2 {
-  color: 000;
-  font-size: var(--h4);
-}
-.dynacard {
-  display: flex;
-  flex-flow: row nowrap;
-  margin-left: 50rem;
-  margin-right: 50rem;
-  justify-content: space-between;
-}
+
 </style>

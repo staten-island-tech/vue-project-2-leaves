@@ -36,8 +36,5 @@ export default {
 </script>
 
 <style>
-.about {
-  background-color: var(--color2);
-}
 
 </style>
