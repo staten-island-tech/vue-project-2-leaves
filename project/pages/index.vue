@@ -7,7 +7,7 @@
         @trigger3="navigateWild"
         @trigger4="navigateGyms"
         @trigger5="navigateDynamax"
-        @themeswitch="themeswitcher"
+        @themeswitch="changetheme"
       ></Header>
       <About></About>
       <Towns></Towns>
@@ -52,12 +52,8 @@ export default {
     navigateDynamax: function (n) {
       document.getElementById("dynamax").scrollIntoView("dynamax");
     },
-    themeswitcher: function (n) {
-      if (this.theme === "theme1") {
-        this.theme === "theme2";
-      } else {
-        this.theme === "theme2";
-      }
+    changetheme() {
+      this.theme = this.theme === "theme1" ? "theme2" : "theme1";
     },
   },
 };

@@ -1,9 +1,8 @@
 <template>
   <div class="town">
-      <img class="cardImage" :src="image" alt="" />
-      <h5 class="cardTitle">{{ name }}</h5>
-      <!-- <p class="cardText">{{ description }}</p> -->
-      
+    <img class="cardImage" :src="image" alt="" />
+    <h5 class="cardTitle">{{ name }}</h5>
+    <!-- <p class="cardText">{{ description }}</p> -->
   </div>
 </template>
 
@@ -40,5 +39,8 @@ export default {
   padding-left: 2rem;
   padding-right: 2rem;
   background-color: var(--darkblue);
+}
+.cardTitle {
+  color: var(--color0);
 }
 </style>

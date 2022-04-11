@@ -59,6 +59,7 @@ export default {
 .gymInfo {
   display: flex;
   flex-flow: row nowrap;
+  color: var(--color0);
 }
 .gymCardLeft {
   margin-right: 1rem;
