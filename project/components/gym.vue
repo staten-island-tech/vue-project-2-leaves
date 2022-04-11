@@ -38,7 +38,24 @@ export default {
   },
 };
 </script>
-
 <style>
-
+.gymInfo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: start;
+}
+.leader-image {
+  height: 100px;
+  width: 150px;
+  object-fit: cover;
+}
+.card-image {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+.gymCardLeft, .gymCardRight {
+  margin: 1rem;
+}
 </style>

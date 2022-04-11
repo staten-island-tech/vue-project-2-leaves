@@ -177,5 +177,11 @@ export default {
 </script>
 
 <style>
-
+.gymsDisplay {
+  overflow-x: none;
+  overflow-y: auto;
+  display: flex;
+  justify-content: space between;
+  flex-flow: row nowrap;
+}
 </style>
