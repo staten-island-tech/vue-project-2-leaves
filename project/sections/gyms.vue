@@ -191,7 +191,7 @@ export default {
   justify-content: space-between;
 }
 .gym:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
   transition-duration: 0.1s;
 }
 </style>
