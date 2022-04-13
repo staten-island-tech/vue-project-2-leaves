@@ -21,11 +21,9 @@
           <button class="button" v-on:click="navigate5" :id="dynamax">
             Dynmax
           </button>
-          <div :class="theme === 'theme1' ? 'theme1' : 'theme2'">
-            <button class="button" v-on:click="themeswitch" :id="theme">
-              Theme
-            </button>
-          </div>
+          <button class="button" v-on:click="themeswitch" :id="theme">
+            Theme
+          </button>
         </div>
       </div>
       <div class="map"></div>
@@ -94,7 +92,7 @@ export default {
 }
 .map {
   text-align: center;
-  height: 100vh;
+  height: 100rem;
   background-image: url("https://images.nintendolife.com/0cb4cd2bf797b/1280x720.jpg");
   background-size: cover;
 }

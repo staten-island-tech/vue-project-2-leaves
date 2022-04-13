@@ -1,5 +1,5 @@
 <template>
-  <div class="site">
+  <div class="site" id="website">
     <div>
       <Header
         @trigger="navigateAbout"
@@ -7,7 +7,7 @@
         @trigger3="navigateWild"
         @trigger4="navigateGyms"
         @trigger5="navigateDynamax"
-        @themeswitch="changetheme"
+        @themeswitch="modeswitch"
       ></Header>
       <About></About>
       <Towns></Towns>
@@ -52,8 +52,8 @@ export default {
     navigateDynamax: function (n) {
       document.getElementById("dynamax").scrollIntoView("dynamax");
     },
-    changetheme() {
-      this.theme = this.theme === "theme1" ? "theme2" : "theme1";
+    modeswitch: function (n) {
+      document.getElementById("website").toggle("theme2");
     },
   },
 };
@@ -99,6 +99,6 @@ head,
 }
 .theme2 {
   background-color: var(--color5);
-  color: var(--color0);
+  color: var(--color6);
 }
 </style>
