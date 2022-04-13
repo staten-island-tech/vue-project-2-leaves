@@ -59,7 +59,6 @@ export default {
     width: 8%;
     position: fixed;
     background-color: var(--color2);
-    opacity: 0.2;
   }
   .directory {
     display: flex;
@@ -70,19 +69,19 @@ export default {
     justify-content: center;
   }
   .button {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
     opacity: 1;
     color: var(--color0);
     background-color: transparent;
     border: none;
     font-size: var(--h4);
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
     text-align: right;
     margin-right: 1rem;
   }
   .button:hover {
     color: var(--color1);
-    transform: translate(-20px) scale(1.1);
+    transform: translate(-20px) scale(1.2);
   }
 </style>
