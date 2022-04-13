@@ -54,7 +54,7 @@ export default {
       document.getElementById("gyms").scrollIntoView("gyms");
     },
     navigateDynamax: function (n) {
-      document.getElementById("dynamax").scrollIntoView("dynamax");
+      document.getElementById("dyna").scrollIntoView("dyna");
     },
     changetheme() {
       this.theme = this.theme === "theme1" ? "theme2" : "theme1";
@@ -75,6 +75,7 @@ head,
 }
 .site {
   scroll-behavior: smooth;
+  background-color: var(--color3);
 }
 .map {
   height: 400px;

@@ -16,12 +16,12 @@
           <button class="button" v-on:click="navigate5" :id="dynamax">
             Dynmax
           </button>
-          <div :class="theme === 'theme1' ? 'theme1' : 'theme2'">
-            <button class="button" v-on:click="themeswitch" :id="theme">
-              Theme
-            </button>
-          </div>
         </div>
+        <!-- <div :class="theme === 'theme1' ? 'theme1' : 'theme2'">
+          <button class="button" v-on:click="themeswitch" :id="theme">
+            Theme
+          </button>
+        </div> -->
     </div>
 </template>
 
@@ -29,9 +29,20 @@
 export default {
   name: "NavBar",
   methods: {
-    navigate: function () {
-      console.log(this.id);
-      this.$emit('trigger', this.id);
+    navigate1: function () {
+      this.$emit("trigger", this.id);
+    },
+    navigate2: function () {
+      this.$emit("trigger2", this.id);
+    },
+    navigate3: function () {
+      this.$emit("trigger3", this.id);
+    },
+    navigate4: function () {
+      this.$emit("trigger4", this.id);
+    },
+    navigate5: function () {
+      this.$emit("trigger5", this.id);
     },
   },
   
@@ -40,19 +51,38 @@ export default {
 <style>
   .navbar {
     z-index: 2;
-    left: 88%;
+    left: 92%;
     right: 0%;
     top: 0%;
     bottom: 0%;
     height: 100vh;
-    width: 12%;
+    width: 8%;
     position: fixed;
-    background-color: thistle;
+    background-color: var(--color2);
+    opacity: 0.2;
   }
   .directory {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    top: 50%;
+    bottom: 50%;
     height: 100vh;
+    justify-content: center;
+  }
+  .button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    opacity: 1;
+    color: var(--color0);
+    background-color: transparent;
+    border: none;
+    font-size: var(--h4);
+    transition-duration: 0.5s;
+    text-align: right;
+    margin-right: 1rem;
+  }
+  .button:hover {
+    color: var(--color1);
+    transform: translate(-20px) scale(1.1);
   }
 </style>

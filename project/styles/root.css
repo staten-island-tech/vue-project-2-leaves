@@ -1,8 +1,5 @@
 :root {
-    /* colors */
-    --darkblue: rgb(14, 35, 78);
-    --lightblue: rgb(196, 248, 255);
-
+    /* font sizes */
     --extraLarge: 4.768rem;
     --large: 3.815rem;
     --h1: 3.052rem;
@@ -14,9 +11,9 @@
     --small: 0.8rem;
     --extraSmall: 0.64rem;
 
-    /* default theme */
-    --color0: rgb(24, 24, 24);
-    --color1: rgb(31, 31, 31);
+    /* first theme */
+    --color0: rgb(190, 253, 255); 
+    --color1: rgb(228, 254, 255);
     --color2: rgb(41, 41, 41);
     --color3: rgb(51, 51, 51);
     --color4: rgb(61, 61, 61);

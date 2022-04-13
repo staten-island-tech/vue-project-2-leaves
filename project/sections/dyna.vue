@@ -1,5 +1,5 @@
 <template>
-  <div class="dynamax section">
+  <div class="dynamax section" id="dyna">
     <div class="part">
       <div class="sectionTitle">Dynamax and Gigantamax</div>
       <p class="text">
