@@ -53,7 +53,7 @@ export default {
       document.getElementById("dynamax").scrollIntoView("dynamax");
     },
     modeswitch: function (n) {
-      document.getElementById("website").toggle("theme2");
+      document.getElementById("website");
     },
   },
 };

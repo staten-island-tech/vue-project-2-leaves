@@ -51,6 +51,9 @@ export default {
     navigate5: function () {
       this.$emit("trigger5", this.id);
     },
+    themeswitch: function () {
+      this.$emit * "modeswitch";
+    },
   },
 };
 </script>
