@@ -63,8 +63,6 @@ export default {
   .directory {
     display: flex;
     flex-flow: column nowrap;
-    top: 50%;
-    bottom: 50%;
     height: 100vh;
     justify-content: center;
   }

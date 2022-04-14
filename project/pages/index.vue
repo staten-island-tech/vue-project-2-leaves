@@ -72,8 +72,6 @@ head,
   margin: 0;
   box-sizing: border-box;
   text-align: center;
-}
-.site {
   scroll-behavior: smooth;
   background-color: var(--color3);
 }
@@ -81,6 +79,12 @@ head,
   height: 400px;
   width: 600px;
   object-fit: cover;
+}
+.g {
+  font-size: var(--h1);
+  margin: 2rem;
+  animation-name: glow;
+  animation-duration: 10s;
 }
 /* .theme1 {
   background-color: var(--color7);
@@ -90,4 +94,11 @@ head,
   background-color: var(--color5);
   color: var(--color0);
 } */
+@keyframes glow {
+  0% {color: var(--color6);}
+  25% {color: var(--color7);}
+  50% {color: var(--color8);}
+  75% {color: var(--color9);}
+  100% {color: var(--color10);}
+}
 </style>

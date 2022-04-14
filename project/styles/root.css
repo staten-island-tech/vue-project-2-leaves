@@ -14,10 +14,14 @@
     /* first theme */
     --color0: rgb(190, 253, 255); 
     --color1: rgb(228, 254, 255);
-    --color2: rgb(41, 41, 41, 20%);
+    --color2: rgb(41, 41, 41, 40%);
     --color3: rgb(51, 51, 51);
     --color4: rgb(61, 61, 61);
     --color5: rgb(70, 70, 70);
-    --color6:#f09797;
-    --color7:#1c1717;
+    --color6:rgb(238, 91, 91);
+    --color7: rgb(105, 238, 145);
+    --color8:rgb(129, 241, 227);
+    --color9: rgb(164, 50, 179);
+    --color10: rgb(255, 181, 243);
+    
 }
