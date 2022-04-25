@@ -14,6 +14,7 @@
       <Wild></Wild>
       <Gyms></Gyms>
       <Dynamax></Dynamax>
+      <Footer></Footer>
     </div>
   </div>
 </template>
