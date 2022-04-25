@@ -1,12 +1,13 @@
 <template>
-  <div class="site">
-    <div class="title">
+  <div class="site" id="site">
+    <div class="title" id="title">
       <h1 class="g">Galar Region</h1>
       <img class="map" src="https://images.nintendolife.com/0cb4cd2bf797b/1280x720.jpg" alt="">
     </div>
     <div>
       <NavBar
-        @trigger="navigateAbout"
+        @trigger0="navigateTop"
+        @trigger1="navigateAbout"
         @trigger2="navigateTowns"
         @trigger3="navigateWild"
         @trigger4="navigateGyms"
@@ -41,6 +42,9 @@ export default {
     Footer,
   },
   methods: {
+    navigateTop: function (n) {
+      document.getElementById("site").scrollIntoView("site");
+    },
     navigateAbout: function (n) {
       document.getElementById("about").scrollIntoView("about");
     },
@@ -85,6 +89,24 @@ head,
   margin: 2rem;
   animation-name: glow;
   animation-duration: 10s;
+  animation-iteration-count: infinite;
+  
+}
+.sectionTitle {
+  font-size: var(--h3);
+  color: var(--color1);
+}
+.text {
+  font-size: var(--h5);
+  color: var(--color1);
+}
+.source {
+  font-size: var(--h6);
+  color: var(--color1);
+}
+.sectionSubTitle {
+  font-size: var(--h4);
+  color: var(--color1);
 }
 /* .theme1 {
   background-color: var(--color7);
@@ -95,10 +117,11 @@ head,
   color: var(--color0);
 } */
 @keyframes glow {
-  0% {color: var(--color6);}
-  25% {color: var(--color7);}
-  50% {color: var(--color8);}
-  75% {color: var(--color9);}
-  100% {color: var(--color10);}
+  0% {color: var(--color10);}
+  20% {color: var(--color6);}
+  40% {color: var(--color9);}
+  60% {color: var(--color8);}
+  80% {color: var(--color7);}
+  100% {color: var(--color6);}
 }
 </style>

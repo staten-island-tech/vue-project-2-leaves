@@ -1,6 +1,9 @@
 <template>
   <div class="navbar">
         <div class="directory">
+          <button class="button" v-on:click="navigate0" :id="top">
+            Top
+          </button>
           <button class="button" v-on:click="navigate1" :id="about">
             About
           </button>
@@ -29,8 +32,11 @@
 export default {
   name: "NavBar",
   methods: {
+    navigate0: function () {
+      this.$emit("trigger0", this.id);
+    },
     navigate1: function () {
-      this.$emit("trigger", this.id);
+      this.$emit("trigger1", this.id);
     },
     navigate2: function () {
       this.$emit("trigger2", this.id);
@@ -58,7 +64,8 @@ export default {
     height: 100vh;
     width: 8%;
     position: fixed;
-    background-color: var(--color2);
+    /* background-color: var(--color2); */
+    background-color: none;
   }
   .directory {
     display: flex;
