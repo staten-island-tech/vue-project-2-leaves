@@ -70,7 +70,7 @@ export default {
 
 <style>
 .dynamax {
-  background-color: var(--lightblue);
+  background-color: var(--color2);
 }
 .dynaImg {
   height: 300px;
