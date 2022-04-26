@@ -64,7 +64,7 @@ export default {
     height: 100vh;
     width: 8%;
     position: fixed;
-    /* background-color: var(--color2); */
+    background-color: var(--color2);
     background-color: none;
   }
   .directory {

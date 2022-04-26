@@ -19,6 +19,7 @@
       <Wild></Wild>
       <Gyms></Gyms>
       <Dynamax></Dynamax>
+      <Footer></Footer>
     </div>
   </div>
 </template>
@@ -77,6 +78,8 @@ head,
   box-sizing: border-box;
   text-align: center;
   scroll-behavior: smooth;
+}
+body, head {
   background-color: var(--color3);
 }
 .map {
@@ -90,7 +93,11 @@ head,
   animation-name: glow;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  
+}
+.site {
+  width: 88%;
+  margin-left: 6%;
+  margin-right: 6%;
 }
 .sectionTitle {
   font-size: var(--h3);
@@ -107,6 +114,10 @@ head,
 .sectionSubTitle {
   font-size: var(--h4);
   color: var(--color1);
+}
+.section {
+  margin-top: 8rem;
+  
 }
 /* .theme1 {
   background-color: var(--color7);
