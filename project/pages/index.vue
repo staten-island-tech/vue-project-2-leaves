@@ -54,7 +54,7 @@ export default {
       document.getElementById("dynamax").scrollIntoView("dynamax");
     },
     modeswitch: function (n) {
-      document.getElementById("website");
+      document.getElementById("website").toggleAttribute("theme2");
     },
   },
 };
@@ -96,7 +96,7 @@ head,
 }
 .theme1 {
   background-color: var(--color7);
-  color: var(--color6);
+  color: var(--color1);
 }
 .theme2 {
   background-color: var(--color5);

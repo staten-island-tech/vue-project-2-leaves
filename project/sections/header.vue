@@ -52,7 +52,7 @@ export default {
       this.$emit("trigger5", this.id);
     },
     themeswitch: function () {
-      this.$emit * "modeswitch";
+      this.$emit("modeswitch", this.id);
     },
   },
 };
