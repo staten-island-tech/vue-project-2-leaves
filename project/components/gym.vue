@@ -58,4 +58,8 @@ export default {
 .gymCardLeft, .gymCardRight {
   margin: 1rem;
 }
+.cardText {
+  color: var(--color1);
+  font-size: var(--h5);
+}
 </style>
