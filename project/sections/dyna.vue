@@ -16,7 +16,7 @@
         G-Max Move. Other than having a G-Max Move, Gigantamax is functionally
         identical to a Dynamax.
       </p>
-      <div class="sectionsubTitle">Effects</div>
+      <div class="sectionSubTitle">Effects</div>
       <p class="text">
         Dynamaxing increases a Pokémon's size drastically, as well as changing
         the moves of the Pokémon and doubling their max and current HP in battle
@@ -43,7 +43,7 @@
     </div>
     <div class="dynacard">
       <div>
-        <div class="cardTitle2">Dynamax</div>
+        <div class="imageCaption">Dynamax</div>
         <img
           src="https://pbs.twimg.com/media/D-9K9YpU4AASdVa.jpg"
           alt=""
@@ -51,7 +51,7 @@
         />
       </div>
       <div>
-        <div class="cardTitle2">Gigantamax</div>
+        <div class="imageCaption">Gigantamax</div>
         <img
           src="https://images.gnwcdn.com/2019/articles/2019-07-08-15-43/new-pokemon-alcremie-looks-like-a-cake-attacks-by-squirting-whipped-cream-1562596998144.jpg/EG11/resize/1200x-1/new-pokemon-alcremie-looks-like-a-cake-attacks-by-squirting-whipped-cream-1562596998144.jpg"
           alt=""

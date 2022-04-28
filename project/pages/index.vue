@@ -115,6 +115,10 @@ body, head {
   font-size: var(--h4);
   color: var(--color1);
 }
+.imageCaption {
+  font-size: var(--h4);
+  color: var(--color1);
+}
 .section {
   margin-top: 8rem;
   
