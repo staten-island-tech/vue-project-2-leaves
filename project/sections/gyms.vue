@@ -177,9 +177,6 @@ export default {
 </script>
 
 <style>
-.gyms {
-  background-color: var(--color1);
-}
 .gymsDisplay {
   display: flex;
   flex-flow: row nowrap;

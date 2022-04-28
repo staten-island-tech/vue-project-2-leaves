@@ -69,9 +69,6 @@ export default {
 </script>
 
 <style>
-.dynamax {
-  background-color: var(--color2);
-}
 .dynaImg {
   height: 300px;
   width: 300px;

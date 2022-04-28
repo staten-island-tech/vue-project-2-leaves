@@ -80,7 +80,6 @@ export default {
 
 <style>
 .wild {
-  background-color: var(--color2);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;

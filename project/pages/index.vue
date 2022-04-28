@@ -1,5 +1,5 @@
 <template>
-  <div class="site" id="website">
+  <div class="site" :class="mode" id="website">
     <div>
       <Header
         @trigger="navigateAbout"
@@ -28,6 +28,11 @@ import Dynamax from "../sections/dyna.vue";
 import Footer from "../sections/footer.vue";
 export default {
   name: "site",
+  data() {
+    return {
+      mode: "theme1",
+    };
+  },
   components: {
     Header,
     About,
@@ -54,7 +59,11 @@ export default {
       document.getElementById("dynamax").scrollIntoView("dynamax");
     },
     modeswitch: function (n) {
-      document.getElementById("website").toggleAttribute("theme2");
+      if (this.mode === "theme1") {
+        this.mode === "theme2";
+      } else {
+        this.mode === "theme1";
+      }
     },
   },
 };
@@ -95,8 +104,8 @@ head,
   padding: 1rem;
 }
 .theme1 {
-  background-color: var(--color7);
-  color: var(--color1);
+  background-color: var(--color2);
+  color: var(--color5);
 }
 .theme2 {
   background-color: var(--color5);
