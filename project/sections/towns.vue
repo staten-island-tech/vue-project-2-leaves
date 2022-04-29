@@ -4,7 +4,7 @@
     <div class="townsDisplay">
       <Town
         v-for="town in towns"
-        :key="town"
+        :key="town.name"
         :name="town.name"
         :image="town.image"
         :description="town.desc"

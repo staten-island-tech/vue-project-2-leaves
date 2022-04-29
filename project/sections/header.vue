@@ -6,22 +6,22 @@
           <h1 class="g">Galar Region</h1>
         </div>
         <div class="directory">
-          <button class="button" v-on:click="navigate1" :id="about">
+          <button class="button" v-on:click="navigate1" id="about">
             About
           </button>
-          <button class="button" v-on:click="navigate2" :id="towns">
+          <button class="button" v-on:click="navigate2" id="towns">
             Towns
           </button>
-          <button class="button" v-on:click="navigate3" :id="wild">
+          <button class="button" v-on:click="navigate3" id="wild">
             Wild Area
           </button>
-          <button class="button" v-on:click="navigate4" :id="gympart">
+          <button class="button" v-on:click="navigate4" id="gympart">
             Gyms
           </button>
-          <button class="button" v-on:click="navigate5" :id="dynamax">
+          <button class="button" v-on:click="navigate5" id="dynamax">
             Dynmax
           </button>
-          <button class="button" v-on:click="themeswitch" :id="theme">
+          <button class="button" v-on:click="themeswitch" id="theme">
             Theme
           </button>
         </div>

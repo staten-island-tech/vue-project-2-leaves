@@ -58,7 +58,7 @@ export default {
     navigateDynamax: function (n) {
       document.getElementById("dynamax").scrollIntoView("dynamax");
     },
-    modeswitch: function (n) {
+    modeswitch: function () {
       if (this.mode === "theme1") {
         this.mode === "theme2";
       } else {
