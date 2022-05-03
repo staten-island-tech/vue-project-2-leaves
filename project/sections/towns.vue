@@ -4,7 +4,7 @@
     <div class="townsDisplay">
       <Town
         v-for="town in towns"
-        :key="town.name"
+        :key="town"
         :name="town.name"
         :image="town.image"
         :description="town.desc"
@@ -79,16 +79,11 @@ export default {
 
 <style>
 .townsDisplay {
-  display: flex;
-  flex-flow: row nowrap;
   overflow-x: auto;
   overflow-y: none;
-  scrollbar-color: var(--color5) var(--color4);
-  scrollbar-width: thin;
-}
-
-.town:hover {
-  transform: scale(1.03);
-  transition-duration: 0.1s;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
 }
 </style>

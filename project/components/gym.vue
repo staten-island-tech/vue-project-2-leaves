@@ -3,7 +3,7 @@
     <h5 class="cardTitle">{{ name }}</h5>
     <div class="gymInfo">
       <div class="gymCardLeft">
-        <img class="cardImage" :src="image" alt="" />
+        <img class="card-image" :src="image" alt="" />
         <p class="cardText">Location: {{ location }}</p>
         <p class="cardText">Badge: {{ badge }}</p>
         <p class="cardText">Specialty: {{ type }}</p>
@@ -38,33 +38,28 @@ export default {
   },
 };
 </script>
-
 <style>
-.gym {
-  margin: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  background-color: var(--darkblue);
-  flex-basis: 40%;
-}
-.leader-image {
-  margin-top: 1rem;
-  height: 150px;
-  width: 200px;
-  object-fit: cover;
-}
 .gymInfo {
   display: flex;
   flex-flow: row nowrap;
-  color: var(--color0);
+  justify-content: space-around;
+  align-items: flex-start;
 }
-.gymCardLeft {
-  margin-right: 1rem;
+.leader-image {
+  height: 100px;
+  width: 150px;
+  object-fit: cover;
 }
-.gymCardRight {
-  margin-left: 1rem;
+.card-image {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+.gymCardLeft, .gymCardRight {
+  margin: 1rem;
+}
+.cardText {
+  color: var(--color1);
+  font-size: var(--h5);
 }
 </style>

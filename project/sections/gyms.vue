@@ -4,7 +4,7 @@
     <div class="gymsDisplay">
       <Gym
         v-for="gym in gyms"
-        :key="gym.name"
+        :key="gym"
         :name="gym.name"
         :location="gym.location"
         :image="gym.image"
@@ -74,7 +74,7 @@ export default {
         },
         {
           gym: "4",
-          name: "Stow-on-Side Fighting",
+          name: "Stow-on-Side",
           location: "Lateral Town",
           image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSviCfSRSW8UGKhiEfpfNvlxvn6Yoca5EStNA&usqp=CAU",
@@ -88,7 +88,7 @@ export default {
         },
         {
           gym: "4",
-          name: "Stow-on-Side Ghost",
+          name: "Stow-on-Side",
           location: "Lateral Town",
           image:
             "http://pm1.narvii.com/7463/1eeafaf7bc8ec345e4d3eab5c4465c5cc28d2d95r1-1024-642v2_uhq.jpg",
@@ -116,7 +116,7 @@ export default {
         },
         {
           gym: "6",
-          name: "Circhester Ice",
+          name: "Circhester",
           location: "Circus Town",
           image:
             "https://oyster.ignimgs.com/wordpress/stg.ign.com/2020/05/Shield_gym_ice.png?fit=bounds&width=1280&height=720",
@@ -130,7 +130,7 @@ export default {
         },
         {
           gym: "6",
-          name: "Circhester Rock",
+          name: "Circhester",
           location: "Circus Town",
           image:
             "https://static1-us.millenium.gg/articles/1/91/11/@/101997-part13-article_m-2.png",
@@ -178,17 +178,10 @@ export default {
 
 <style>
 .gymsDisplay {
+  overflow-x: none;
+  overflow-y: auto;
   display: flex;
+  justify-content: space between;
   flex-flow: row nowrap;
-  overflow-x: auto;
-  overflow-y: none;
-  scrollbar-color: var(--color5) var(--color4);
-  scrollbar-width: thin;
-
-  justify-content: space-between;
-}
-.gym:hover {
-  transform: scale(1.05);
-  transition-duration: 0.1s;
 }
 </style>

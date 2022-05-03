@@ -17,7 +17,7 @@
         wild Pokémon mechanics, carry over to the Isle of Armor and Crown
         Tundra.
       </p>
-      <h5 class="sectionsubTitle">Location</h5>
+      <h5 class="sectionSubTitle">Location</h5>
       <p class="text">
         The Wild Area is composed of 18 subareas, which are grouped into two
         groups: The roughly rectangular South Wild Area has 10 subareas; and the
@@ -31,7 +31,7 @@
         Wedgehurst Station. Thereafter, players can return to the Wild Area via
         the Wild Area Station as well as a number of Flying Taxi destinations.
       </p>
-      <h5 class="sectionsubTitle">Weather</h5>
+      <h5 class="sectionSubTitle">Weather</h5>
       <p class="text">
         The weather in the Wild Area determines which wild Pokémon can appear
         and, in some cases, which weather conditions and terrain appear in
@@ -49,7 +49,7 @@
         dates, the whole Wild Area will have the same weather. These dates are
         typically the first of a month.
       </p>
-      <h5 class="sectionsubTitle">Prerequisites</h5>
+      <h5 class="sectionSubTitle">Prerequisites</h5>
       <p class="text">
         Some weather conditions will only begin to appear in the Wild Area after
         players have reached certain milestones in the game. Before players have
@@ -79,18 +79,4 @@ export default {
 </script>
 
 <style>
-.wild {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.part {
-  flex-basis: 40%;
-}
-.wildImg {
-  height: 600px;
-  width: 800px;
-  object-fit: cover;
-}
 </style>

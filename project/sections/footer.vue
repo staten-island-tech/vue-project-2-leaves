@@ -39,15 +39,22 @@ export default {
 </script>
 
 <style>
+.footer {
+  background-color: var(--color1);
+}
 .footer-img {
   text-align: center;
 }
 .logo {
-  height: 4rem;
-  height: 4rem;
+  height: 3rem;
+  height: 3rem;
+  margin: 1.5rem;
 }
 .footer-text {
   text-align: center;
   font-size: var(--h4);
+}
+.footer-text:hover {
+  text-decoration: underline;
 }
 </style>

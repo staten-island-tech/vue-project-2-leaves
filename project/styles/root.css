@@ -1,8 +1,5 @@
 :root {
-    /* colors */
-    --darkblue: rgb(14, 35, 78); 
-    --lightblue: rgb(196, 248, 255);
-
+    /* font sizes */
     --extraLarge: 4.768rem;
     --large: 3.815rem;
     --h1: 3.052rem;
@@ -14,13 +11,17 @@
     --small: 0.8rem;
     --extraSmall: 0.64rem;
 
-    /* default theme */
-    --color0: rgb(245, 253, 255);
-    --color1: rgb(224, 255, 253);
-    --color2: rgb(185, 240, 237);
-    --color3: rgb(119, 197, 193);
-    --color4: rgb(254, 239, 255);
-    --color5: rgb(45, 34, 51);
-   --color6:#f8b9b9;
-   --color7:#1c1717
+    /* first theme */
+    --color0: rgb(190, 253, 255); 
+    --color1: rgb(208, 252, 250);
+    --color2: rgb(41, 41, 41, 40%); 
+    --color3: rgb(51, 51, 51);
+    --color4: rgb(61, 61, 61);
+    --color5: rgb(70, 70, 70);
+    --color6:rgb(238, 106, 243);
+    --color7: rgb(105, 238, 145);
+    --color8:rgb(129, 241, 227);
+    --color9: rgb(202, 103, 241);
+    --color10: rgb(255, 181, 243);
+    
 }
