@@ -6,19 +6,19 @@
           <h1 class="g">Galar Region</h1>
         </div>
         <div class="directory">
-          <button class="button" v-on:click="navigate1" id="about">
+          <button class="button" v-on:click="navigate1" id="aboutpart">
             About
           </button>
-          <button class="button" v-on:click="navigate2" id="towns">
+          <button class="button" v-on:click="navigate2" id="townpart">
             Towns
           </button>
-          <button class="button" v-on:click="navigate3" id="wild">
+          <button class="button" v-on:click="navigate3" id="wildpart">
             Wild Area
           </button>
           <button class="button" v-on:click="navigate4" id="gympart">
             Gyms
           </button>
-          <button class="button" v-on:click="navigate5" id="dynamax">
+          <button class="button" v-on:click="navigate5" id="dynamaxpart">
             Dynmax
           </button>
           <button class="button" v-on:click="themeswitch" id="theme">
@@ -51,10 +51,10 @@ export default {
     navigate5: function () {
       this.$emit("trigger5", this.id);
     },
-    themeswitch: function () {
+    themeswitch:function () {
       this.$emit("modeswitch", this.id);
     },
-  },
+  }
 };
 </script>
 <style>
