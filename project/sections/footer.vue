@@ -39,6 +39,9 @@ export default {
 </script>
 
 <style>
+.footer {
+  background-color: var(--color1);
+}
 .footer-img {
   text-align: center;
 }

@@ -4,7 +4,7 @@
     <div class="gymsDisplay">
       <Gym
         v-for="gym in gyms"
-        :key="gym.name"
+        :key="gym"
         :name="gym.name"
         :location="gym.location"
         :image="gym.image"
