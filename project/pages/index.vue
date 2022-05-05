@@ -2,7 +2,11 @@
   <div class="site" id="site">
     <div class="title" id="title">
       <h1 class="g">Galar Region</h1>
-      <img class="map" src="https://images.nintendolife.com/0cb4cd2bf797b/1280x720.jpg" alt="">
+      <img
+        class="map"
+        src="https://images.nintendolife.com/0cb4cd2bf797b/1280x720.jpg"
+        alt=""
+      />
     </div>
     <div>
       <NavBar
@@ -65,8 +69,7 @@ export default {
       if (document.body.classList.contains("theme1")) {
         document.body.classList.add("theme2");
         document.body.classList.remove("theme1");
-      }
-      else {
+      } else {
         document.body.classList.add("theme1");
         document.body.classList.remove("theme2");
       }
@@ -86,7 +89,8 @@ head,
   text-align: center;
   scroll-behavior: smooth;
 }
-body, head {
+body,
+head {
   background-color: var(--color3);
   color: var(--color1);
 }
@@ -104,23 +108,23 @@ body, head {
 }
 .site {
   width: 88%;
-  margin-left: 6%;
+  margin-left: 2%;
   margin-right: 6%;
 }
 .sectionTitle {
-  font-size: var(--h3);
+  font-size: var(--h2);
 }
 .text {
-  font-size: var(--h5);
+  font-size: var(--h4);
 }
 .source {
-  font-size: var(--h6);
+  font-size: var(--h5);
 }
 .sectionSubTitle {
-  font-size: var(--h4);
+  font-size: var(--h3);
 }
 .imageCaption {
-  font-size: var(--h4);
+  font-size: var(--h3);
 }
 .section {
   margin-top: 10rem;
@@ -136,11 +140,23 @@ body, head {
 }
 
 @keyframes glow {
-  0% {color: var(--color10);}
-  20% {color: var(--color6);}
-  40% {color: var(--color9);}
-  60% {color: var(--color8);}
-  80% {color: var(--color7);}
-  100% {color: var(--color6);}
+  0% {
+    color: var(--color10);
+  }
+  20% {
+    color: var(--color6);
+  }
+  40% {
+    color: var(--color9);
+  }
+  60% {
+    color: var(--color8);
+  }
+  80% {
+    color: var(--color7);
+  }
+  100% {
+    color: var(--color6);
+  }
 }
 </style>
