@@ -12,7 +12,7 @@
         @trigger3="navigateWild"
         @trigger4="navigateGyms"
         @trigger5="navigateDynamax"
-        @themeswitch="changeTheme"
+        @trigger6="changeTheme"
       ></NavBar>
       <About></About>
       <Towns></Towns>
@@ -61,8 +61,15 @@ export default {
     navigateDynamax: function (n) {
       document.getElementById("dyna").scrollIntoView("dyna");
     },
-    changetheme() {
-      this.theme = this.theme === "theme1" ? "theme2" : "theme1";
+    changeTheme: function (n) {
+      if (document.body.classList.contains("theme1")) {
+        document.body.classList.add("theme2");
+        document.body.classList.remove("theme1");
+      }
+      else {
+        document.body.classList.add("theme1");
+        document.body.classList.remove("theme2");
+      }
     },
   },
 };
@@ -81,6 +88,7 @@ head,
 }
 body, head {
   background-color: var(--color3);
+  color: var(--color1);
 }
 .map {
   height: 400px;
@@ -101,37 +109,32 @@ body, head {
 }
 .sectionTitle {
   font-size: var(--h3);
-  color: var(--color1);
 }
 .text {
   font-size: var(--h5);
-  color: var(--color1);
 }
 .source {
   font-size: var(--h6);
-  color: var(--color1);
 }
 .sectionSubTitle {
   font-size: var(--h4);
-  color: var(--color1);
 }
 .imageCaption {
   font-size: var(--h4);
-  color: var(--color1);
 }
 .section {
   margin-top: 10rem;
   padding-top: 3rem;
-  
 }
-/* .theme1 {
-  background-color: var(--color7);
-  color: var(--color6);
+.theme1 {
+  color: var(--color1);
+  background-color: var(--color3);
 }
 .theme2 {
-  background-color: var(--color5);
-  color: var(--color0);
-} */
+  color: var(--color12);
+  background-color: var(--color11);
+}
+
 @keyframes glow {
   0% {color: var(--color10);}
   20% {color: var(--color6);}

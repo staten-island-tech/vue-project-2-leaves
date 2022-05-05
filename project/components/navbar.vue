@@ -1,25 +1,14 @@
 <template>
   <div class="navbar">
-        <div class="directory">
-          <button class="button" v-on:click="navigate0" :id="top">
-            Top
-          </button>
-          <button class="button" v-on:click="navigate1" :id="about">
-            About
-          </button>
-          <button class="button" v-on:click="navigate2" :id="towns">
-            Towns
-          </button>
-          <button class="button" v-on:click="navigate3" :id="wild">
-            Wild Area
-          </button>
-          <button class="button" v-on:click="navigate4" :id="gympart">
-            Gyms
-          </button>
-          <button class="button" v-on:click="navigate5" :id="dynamax">
-            Dynmax
-          </button>
-        </div>
+    <div class="directory">
+      <button class="button" v-on:click="navigate0" >Top</button>
+      <button class="button" v-on:click="navigate1" >About</button>
+      <button class="button" v-on:click="navigate2" >Towns</button>
+      <button class="button" v-on:click="navigate3" >Wild Area</button>
+      <button class="button" v-on:click="navigate4" >Gyms</button>
+      <button class="button" v-on:click="navigate5" >Dynmax</button>
+      <button class="button" v-on:click="switchtheme">Theme</button>
+    </div>
         <!-- <div :class="theme === 'theme1' ? 'theme1' : 'theme2'">
           <button class="button" v-on:click="themeswitch" :id="theme">
             Theme
@@ -33,22 +22,26 @@ export default {
   name: "NavBar",
   methods: {
     navigate0: function () {
-      this.$emit("trigger0", this.id);
+      this.$emit("trigger0");
     },
     navigate1: function () {
-      this.$emit("trigger1", this.id);
+      this.$emit("trigger1");
     },
     navigate2: function () {
-      this.$emit("trigger2", this.id);
+      this.$emit("trigger2");
     },
     navigate3: function () {
-      this.$emit("trigger3", this.id);
+      this.$emit("trigger3");
     },
     navigate4: function () {
-      this.$emit("trigger4", this.id);
+      this.$emit("trigger4");
     },
     navigate5: function () {
-      this.$emit("trigger5", this.id);
+      this.$emit("trigger5");
+    },
+    switchtheme: function () {
+      this.$emit("trigger6");
+      
     },
   },
   
