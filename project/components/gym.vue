@@ -55,7 +55,8 @@ export default {
   width: 200px;
   object-fit: cover;
 }
-.gymCardLeft, .gymCardRight {
+.gymCardLeft,
+.gymCardRight {
   margin: 1rem;
 }
 .cardText {

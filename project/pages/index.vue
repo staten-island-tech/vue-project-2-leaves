@@ -1,8 +1,12 @@
 <template>
-  <div class="site" id="site">
+  <div class="site" :class="mode" id="website">
     <div class="title" id="title">
       <h1 class="g">Galar Region</h1>
-      <img class="map" src="https://images.nintendolife.com/0cb4cd2bf797b/1280x720.jpg" alt="">
+      <img
+        class="map"
+        src="https://images.nintendolife.com/0cb4cd2bf797b/1280x720.jpg"
+        alt=""
+      />
     </div>
     <div>
       <NavBar
@@ -12,7 +16,7 @@
         @trigger3="navigateWild"
         @trigger4="navigateGyms"
         @trigger5="navigateDynamax"
-        @themeswitch="changeTheme"
+        @themeswitch="modeswitch"
       ></NavBar>
       <About></About>
       <Towns></Towns>
@@ -33,6 +37,11 @@ import Dynamax from "../sections/dyna.vue";
 import Footer from "../sections/footer.vue";
 export default {
   name: "site",
+  data() {
+    return {
+      mode: "theme2",
+    };
+  },
   components: {
     NavBar,
     About,
@@ -61,8 +70,12 @@ export default {
     navigateDynamax: function (n) {
       document.getElementById("dyna").scrollIntoView("dyna");
     },
-    changetheme() {
-      this.theme = this.theme === "theme1" ? "theme2" : "theme1";
+    modeswitch: function () {
+      if (this.mode === "theme1") {
+        this.mode === "theme2";
+      } else {
+        this.mode === "theme1";
+      }
     },
   },
 };
@@ -79,7 +92,8 @@ head,
   text-align: center;
   scroll-behavior: smooth;
 }
-body, head {
+body,
+head {
   background-color: var(--color3);
 }
 .map {
@@ -100,20 +114,16 @@ body, head {
   margin-right: 6%;
 }
 .sectionTitle {
-  font-size: var(--h3);
-  color: var(--color1);
+  font-size: var(--h2);
 }
 .text {
-  font-size: var(--h5);
-  color: var(--color1);
+  font-size: var(--h4);
 }
 .source {
-  font-size: var(--h6);
-  color: var(--color1);
+  font-size: var(--h5);
 }
 .sectionSubTitle {
-  font-size: var(--h4);
-  color: var(--color1);
+  font-size: var(--h3);
 }
 .imageCaption {
   font-size: var(--h4);
@@ -122,22 +132,33 @@ body, head {
 .section {
   margin-top: 10rem;
   padding-top: 3rem;
-  
 }
-/* .theme1 {
-  background-color: var(--color7);
-  color: var(--color6);
+.theme1 {
+  background-color: var(--color1);
+  color: var(--color3);
 }
 .theme2 {
-  background-color: var(--color5);
+  background-color: var(--color2);
   color: var(--color0);
-} */
+}
 @keyframes glow {
-  0% {color: var(--color10);}
-  20% {color: var(--color6);}
-  40% {color: var(--color9);}
-  60% {color: var(--color8);}
-  80% {color: var(--color7);}
-  100% {color: var(--color6);}
+  0% {
+    color: var(--color10);
+  }
+  20% {
+    color: var(--color6);
+  }
+  40% {
+    color: var(--color9);
+  }
+  60% {
+    color: var(--color8);
+  }
+  80% {
+    color: var(--color7);
+  }
+  100% {
+    color: var(--color6);
+  }
 }
 </style>
