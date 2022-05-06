@@ -1,7 +1,7 @@
 <template>
   <div class="site" id="site">
     <div class="title" id="title">
-      <h1 class="g">Galar Region</h1>
+      <h1 class="g" id="g">Galar Region</h1>
       <img
         class="map"
         src="https://images.nintendolife.com/0cb4cd2bf797b/1280x720.jpg"
@@ -135,8 +135,8 @@ head {
   background-color: var(--color3);
 }
 .theme2 {
-  color: var(--color12);
-  background-color: var(--color11);
+  color: var(--color3);
+  background-color: var(--color1);
 }
 
 @keyframes glow {
