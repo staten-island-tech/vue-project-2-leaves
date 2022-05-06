@@ -79,4 +79,11 @@ export default {
 </script>
 
 <style>
+.wildImg {
+  width: 600px;
+  height: 350px;
+  object-fit: cover;
+  margin-top: 5.865rem;
+  text-align: center;
+}
 </style>

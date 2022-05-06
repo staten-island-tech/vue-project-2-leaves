@@ -69,4 +69,10 @@ export default {
 </script>
 
 <style>
+.dynaImg {
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+  text-align: center;
+}
 </style>

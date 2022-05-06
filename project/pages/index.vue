@@ -79,6 +79,7 @@ export default {
 </script>
 <style>
 @import "../styles/root.css";
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Iceberg&family=Nova+Flat&display=swap');
 body,
 head,
 * {
@@ -86,7 +87,7 @@ head,
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  text-align: center;
+  text-align: left;
   scroll-behavior: smooth;
 }
 body,
@@ -94,6 +95,7 @@ head {
   background-color: var(--color3);
   color: var(--color1);
 }
+
 .map {
   height: 400px;
   width: 600px;
@@ -111,8 +113,20 @@ head {
   margin-left: 2%;
   margin-right: 6%;
 }
+.g {
+  font-family: 'Iceberg', cursive;
+  text-decoration: bold;
+}
+.sectionTitle, .sectionSubTitle, .button {
+  font-family: 'Nova Flat', cursive;
+}
 .sectionTitle {
   font-size: var(--h2);
+  text-align: center;
+  font-weight: 400;
+}
+.text, .source, .imageCaption {
+  font-family: 'Eczar', serif;
 }
 .text {
   font-size: var(--h4);
@@ -129,6 +143,7 @@ head {
 .section {
   margin-top: 10rem;
   padding-top: 3rem;
+  margin-left: 5rem;
 }
 .theme1 {
   color: var(--color1);
