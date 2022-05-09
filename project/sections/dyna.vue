@@ -41,8 +41,8 @@
         Sources from https://bulbapedia.bulbagarden.net/wiki/Dynamax~
       </p>
     </div>
-    <div class="dynacard">
-      <div>
+    <div class="dynaDisplay">
+      <div class="dynaCard">
         <div class="imageCaption">Dynamax</div>
         <img
           src="https://pbs.twimg.com/media/D-9K9YpU4AASdVa.jpg"
@@ -50,7 +50,7 @@
           class="dynaImg"
         />
       </div>
-      <div>
+      <div class="dynaCard">
         <div class="imageCaption">Gigantamax</div>
         <img
           src="https://images.gnwcdn.com/2019/articles/2019-07-08-15-43/new-pokemon-alcremie-looks-like-a-cake-attacks-by-squirting-whipped-cream-1562596998144.jpg/EG11/resize/1200x-1/new-pokemon-alcremie-looks-like-a-cake-attacks-by-squirting-whipped-cream-1562596998144.jpg"
@@ -74,5 +74,14 @@ export default {
   width: 500px;
   object-fit: cover;
   text-align: center;
+}
+.dynaDisplay {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.dynaCard {
+  
+  padding: 1rem;
 }
 </style>

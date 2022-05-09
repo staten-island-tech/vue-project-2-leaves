@@ -1,9 +1,9 @@
 <template>
   <div class="site" id="site">
-    <div class="title" id="title">
-      <h1 class="g" id="site-title">Galar Region</h1>
+    <div class="header" id="title">
+      <h1 class="siteTitle " id="site-title">Galar Region</h1>
       <img
-        class="map"
+        class="map "
         src="https://images.nintendolife.com/0cb4cd2bf797b/1280x720.jpg"
         alt=""
       />
@@ -107,31 +107,36 @@ head {
   width: 600px;
   object-fit: cover;
 }
-.g {
+.siteTitle {
   font-size: var(--h1);
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
   animation-name: glow;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+  font-family: "Iceberg", cursive;
+  text-decoration: bold;
+  text-align: center;
 }
 .site {
   width: 88%;
   margin-left: 2%;
   margin-right: 6%;
 }
-.g {
-  font-family: "Iceberg", cursive;
-  text-decoration: bold;
-}
 .sectionTitle,
 .sectionSubTitle,
 .button {
   font-family: "Nova Flat", cursive;
 }
+.header {
+  text-align: center;
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
 .sectionTitle {
   font-size: var(--h2);
-  text-align: center;
   font-weight: 400;
+  text-align: center;
 }
 .text,
 .source,
@@ -151,7 +156,7 @@ head {
   font-size: var(--h3);
 }
 .section {
-  margin-top: 10rem;
+  margin-top: 8.5rem;
   padding-top: 3rem;
   margin-left: 5rem;
 }
@@ -163,6 +168,13 @@ head {
   color: var(--color3);
   background-color: var(--color1);
 }
+.sectionSubTitle {
+  margin-top: 1.5rem;
+}
+.text {
+  margin-top: 0.8rem;
+}
+
 
 @keyframes glow {
   0% {

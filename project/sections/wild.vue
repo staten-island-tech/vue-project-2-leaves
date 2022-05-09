@@ -64,11 +64,13 @@
         Sources from https://bulbapedia.bulbagarden.net/wiki/Wild_Area
       </p>
     </div>
-    <img
+    <div class="nsq">
+      <img
       src="https://cdn.mos.cms.futurecdn.net/gqi9P9kBKzDLsva2rffagn-1200-80.jpg"
       alt=""
       class="wildImg"
     />
+    </div>
   </div>
 </template>
 
@@ -84,6 +86,9 @@ export default {
   height: 350px;
   object-fit: cover;
   margin-top: 5.865rem;
+  text-align: center;
+}
+.nsq {
   text-align: center;
 }
 </style>
