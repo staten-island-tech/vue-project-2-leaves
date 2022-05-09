@@ -1,7 +1,7 @@
 <template>
   <div class="site" id="site">
     <div class="title" id="title">
-      <h1 class="g" id="g">Galar Region</h1>
+      <h1 class="g" id="site-title">Galar Region</h1>
       <img
         class="map"
         src="https://images.nintendolife.com/0cb4cd2bf797b/1280x720.jpg"
@@ -35,6 +35,7 @@ import Wild from "../sections/wild.vue";
 import Gyms from "../sections/gyms.vue";
 import Dynamax from "../sections/dyna.vue";
 import Footer from "../sections/footer.vue";
+import { gsap } from "gsap";
 export default {
   name: "site",
   components: {
@@ -45,6 +46,11 @@ export default {
     Gyms,
     Dynamax,
     Footer,
+    gsap,
+  },
+  gsap() {
+    const tl = gsap.timeline({ delay: 0.8 });
+    tl.from(".site-title", { opacity: 0, duration: 0.3 });
   },
   methods: {
     navigateTop: function (n) {
@@ -79,7 +85,7 @@ export default {
 </script>
 <style>
 @import "../styles/root.css";
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Iceberg&family=Nova+Flat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Iceberg&family=Nova+Flat&display=swap");
 body,
 head,
 * {
@@ -114,19 +120,23 @@ head {
   margin-right: 6%;
 }
 .g {
-  font-family: 'Iceberg', cursive;
+  font-family: "Iceberg", cursive;
   text-decoration: bold;
 }
-.sectionTitle, .sectionSubTitle, .button {
-  font-family: 'Nova Flat', cursive;
+.sectionTitle,
+.sectionSubTitle,
+.button {
+  font-family: "Nova Flat", cursive;
 }
 .sectionTitle {
   font-size: var(--h2);
   text-align: center;
   font-weight: 400;
 }
-.text, .source, .imageCaption {
-  font-family: 'Eczar', serif;
+.text,
+.source,
+.imageCaption {
+  font-family: "Eczar", serif;
 }
 .text {
   font-size: var(--h4);
