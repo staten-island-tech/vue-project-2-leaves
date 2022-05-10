@@ -82,8 +82,8 @@ export default {
 
 <style>
 .wildImg {
-  width: 600px;
-  height: 350px;
+  width: 60rem;
+  height: 35rem;
   object-fit: cover;
   margin-top: 5.865rem;
   text-align: center;

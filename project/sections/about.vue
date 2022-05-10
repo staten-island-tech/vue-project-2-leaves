@@ -1,6 +1,5 @@
 <template>
   <div class="about section" id="about">
-    <section id="section2">
     <h3 class="sectionTitle">About Galar</h3>
     <p class="text">
       The Galar region (Japanese: ガラル地方 Galar region) is a region of the
@@ -24,8 +23,6 @@
     <p class="source">
       Sources from:https://bulbapedia.bulbagarden.net/wiki/Galar
     </p>
-    <!-- The Galar region is based off of the island of Great Britian, except rotated 180 degrees to appear upside down. The region is home to the legendary pokemon Eterantus, Zaican, and  -->
-    </section>
   </div>
 </template>
 

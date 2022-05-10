@@ -1,6 +1,6 @@
 <template>
-  <div class="footer">
-    <div class="footer-img">
+  <div class="footer section">
+    <div class="footerImage">
       <img
         src="https://theacademy.la/wp-content/uploads/2017/04/facebook-logo-png-transparent-background.png"
         alt=""
@@ -27,8 +27,8 @@
         class="logo"
       />
     </div>
-    <p class="footer-text">Terms of Use</p>
-    <p class="footer-text">Privacy Policy</p>
+    <p class="footerText">Terms of Use</p>
+    <p class="footerText">Privacy Policy</p>
   </div>
 </template>
 
@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style>
-.footer-img {
+.footerImage {
   text-align: center;
 }
 .logo {
@@ -47,11 +47,11 @@ export default {
   height: 3rem;
   margin: 1.5rem;
 }
-.footer-text {
+.footerText {
   text-align: center;
   font-size: var(--h4);
 }
-.footer-text:hover {
+.footerText:hover {
   text-decoration: underline;
 }
 </style>

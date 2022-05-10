@@ -1,6 +1,6 @@
 <template>
   <div class="dynamax section" id="dyna">
-    <div class="part">
+    <div class="textContainer">
       <div class="sectionTitle">Dynamax and Gigantamax</div>
       <p class="text">
         Dynamax (Japanese: ダイマックス Daimax) is a temporary transformation
@@ -41,21 +41,21 @@
         Sources from https://bulbapedia.bulbagarden.net/wiki/Dynamax~
       </p>
     </div>
-    <div class="dynaDisplay">
-      <div class="dynaCard">
+    <div class="dynamaxDisplay">
+      <div class="dynamaxImageContainer">
         <div class="imageCaption">Dynamax</div>
         <img
           src="https://pbs.twimg.com/media/D-9K9YpU4AASdVa.jpg"
           alt=""
-          class="dynaImg"
+          class="dynamaxImage"
         />
       </div>
-      <div class="dynaCard">
+      <div class="dynamaxImageContainer">
         <div class="imageCaption">Gigantamax</div>
         <img
           src="https://images.gnwcdn.com/2019/articles/2019-07-08-15-43/new-pokemon-alcremie-looks-like-a-cake-attacks-by-squirting-whipped-cream-1562596998144.jpg/EG11/resize/1200x-1/new-pokemon-alcremie-looks-like-a-cake-attacks-by-squirting-whipped-cream-1562596998144.jpg"
           alt=""
-          class="dynaImg"
+          class="dynamaxImage"
         />
       </div>
     </div>
@@ -69,19 +69,18 @@ export default {
 </script>
 
 <style>
-.dynaImg {
-  height: 300px;
-  width: 500px;
+.dynamaxImage {
+  height: 30rem;
+  width: 50rem;
   object-fit: cover;
   text-align: center;
 }
-.dynaDisplay {
+.dynamaxDisplay {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
-.dynaCard {
-  
+.dynamaxImageContainer {
   padding: 1rem;
 }
 </style>

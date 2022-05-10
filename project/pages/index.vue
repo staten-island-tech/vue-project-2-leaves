@@ -105,12 +105,12 @@ head {
 }
 
 .map {
-  height: 400px;
-  width: 600px;
+  height: 40rem;
+  width: 60rem;
   object-fit: cover;
 }
 .siteTitle {
-  font-size: var(--h1);
+  font-size: var(--large);
   margin-top: 2rem;
   margin-bottom: 3rem;
   animation-name: glow;
@@ -196,5 +196,19 @@ head {
   100% {
     color: var(--color6);
   }
+}
+@media screen and (max-width: 900px) {
+  .navbar {
+  z-index: 2;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 100%;
+  height: auto;
+  width: 100%;
+  position: fixed;
+  background-color: var(--color2);
+}
+  
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
-  <div class="gym">
+  <div class="card">
     <h5 class="cardTitle">{{ name }}</h5>
-    <div class="gymInfo">
+    <div class="gymContainer">
       <div class="gymCardLeft">
-        <img class="card-image" :src="image" alt="" />
+        <img class="cardImage" :src="image" alt='An image of ${name}, one of the Galarian gyms' />
         <p class="cardText">Location: {{ location }}</p>
         <p class="cardText">Badge: {{ badge }}</p>
         <p class="cardText">Specialty: {{ type }}</p>
@@ -14,7 +14,7 @@
         <p class="cardText" v-for="pokemon in pokemon" :key="pokemon">
           {{ pokemon }}
         </p>
-        <img class="leader-image" :src="leaderPic" alt="" />
+        <img class="leaderImage" :src="leaderPic" alt="" />
         <p class="cardText">Gym Leader: {{ leader }}</p>
       </div>
     </div>
@@ -39,20 +39,20 @@ export default {
 };
 </script>
 <style>
-.gymInfo {
+.gymContainer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: flex-start;
 }
-.leader-image {
-  height: 100px;
-  width: 150px;
+.leaderImage {
+  height: 15rem;
+  width: 22rem;
   object-fit: cover;
 }
-.card-image {
-  height: 200px;
-  width: 200px;
+.cardImage {
+  height: 23rem;
+  width: 23rem;
   object-fit: cover;
 }
 .gymCardLeft, .gymCardRight {
