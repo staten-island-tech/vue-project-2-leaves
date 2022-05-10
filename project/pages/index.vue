@@ -1,9 +1,9 @@
 <template>
   <div class="site" id="site">
     <div class="header" id="title">
-      <h1 class="siteTitle " id="site-title">Galar Region</h1>
+      <h1 class="siteTitle" id="site-title">Galar Region</h1>
       <img
-        class="map "
+        class="map"
         src="https://images.nintendolife.com/0cb4cd2bf797b/1280x720.jpg"
         alt=""
       />
@@ -36,6 +36,7 @@ import Gyms from "../sections/gyms.vue";
 import Dynamax from "../sections/dyna.vue";
 import Footer from "../sections/footer.vue";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap";
 export default {
   name: "site",
   components: {
@@ -49,6 +50,7 @@ export default {
     gsap,
   },
   gsap() {
+    gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline({ delay: 0.8 });
     tl.from(".site-title", { opacity: 0, duration: 0.3 });
   },
@@ -174,7 +176,6 @@ head {
 .text {
   margin-top: 0.8rem;
 }
-
 
 @keyframes glow {
   0% {
