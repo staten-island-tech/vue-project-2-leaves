@@ -51,7 +51,7 @@ export default {
   width: 8%;
   position: fixed;
   background-color: var(--color2);
-  background-color: none;
+  
 }
 .directory {
   display: flex;
