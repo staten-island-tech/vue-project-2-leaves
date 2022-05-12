@@ -203,34 +203,11 @@ head {
     height: 20rem;
   }
   .leaderImage {
-    height: 15rem;
-    width: 20rem;
+    height: 14rem;
+    width: 19rem;
   }
   .cardText {
     font-size: var(--h3);
-  }
-}
-@media screen and (max-width: 900px) {
-  .cardImage {
-    width: 17rem;
-    height: 17rem;
-  }
-  .leaderImage {
-    height: 11rem;
-    width: 17rem;
-  }
-  .cardText {
-    font-size: var(--h4);
-  }
-}
-@media screen and (max-width: 700px) {
-  body,
-  head,
-  * {
-    font-size: 0.5rem;
-  }
-  .site {
-    width: 100%;
   }
   .navbar {
     z-index: 2;
@@ -257,6 +234,46 @@ head {
     font-size: var(--h3);
     text-align: center;
     margin-right: 0;
+  }
+  .wildImage {
+    height: 20rem;
+    width: 37rem;
+  }
+  .dynamaxImage {
+  height: 19rem;
+  width: 32rem;
+  object-fit: cover;
+  text-align: center;
+  }
+  .site {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .header {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cardImage {
+    width: 17rem;
+    height: 17rem;
+  }
+  .leaderImage {
+    height: 11rem;
+    width: 17rem;
+  }
+  .cardText {
+    font-size: var(--h4);
+  }
+}
+@media screen and (max-width: 700px) {
+  body,
+  head,
+  * {
+    font-size: 0.5rem;
+  }
+  .site {
+    width: 100%;
   }
   .townsDisplay {
     overflow-x: none;

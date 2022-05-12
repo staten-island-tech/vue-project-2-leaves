@@ -68,7 +68,7 @@
       <img
       src="https://cdn.mos.cms.futurecdn.net/gqi9P9kBKzDLsva2rffagn-1200-80.jpg"
       alt=""
-      class="wildImg"
+      class="wildImage"
     />
     </div>
   </div>
@@ -81,7 +81,7 @@ export default {
 </script>
 
 <style>
-.wildImg {
+.wildImage {
   width: 60rem;
   height: 35rem;
   object-fit: cover;

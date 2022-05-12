@@ -51,8 +51,8 @@ export default {
   object-fit: cover;
 }
 .cardImage {
-  height: 80%;
-  width: 80%;
+  height: 23rem;
+  width: 23rem;
   object-fit: cover;
 }
 .gymCardLeft, .gymCardRight {
