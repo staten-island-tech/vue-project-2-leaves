@@ -66,12 +66,12 @@ export default {
       document.getElementById("dyna").scrollIntoView("dyna");
     },
     changeTheme: function (n) {
-      if (document.body.classList.contains("theme1")) {
-        document.body.classList.add("theme2");
-        document.body.classList.remove("theme1");
-      } else {
+      if (document.body.classList.contains("theme2")) {
         document.body.classList.add("theme1");
         document.body.classList.remove("theme2");
+      } else {
+        document.body.classList.add("theme2");
+        document.body.classList.remove("theme1");
       }
     },
   },
@@ -79,7 +79,7 @@ export default {
 </script>
 <style>
 @import "../styles/root.css";
-@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Iceberg&family=Nova+Flat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Iceberg&family=Nova+Flat&display=swap');
 body,
 head,
 * {
@@ -118,6 +118,7 @@ head {
   margin-right: 6%;
 }
 .sectionTitle,
+.cardTitle,
 .sectionSubTitle,
 .button {
   font-family: "Nova Flat", cursive;
@@ -133,6 +134,7 @@ head {
   text-align: center;
 }
 .text,
+.cardText,
 .source,
 .imageCaption {
   font-family: "Eczar", serif;
@@ -190,6 +192,9 @@ head {
   }
 }
 @media screen and (max-width: 1100px) {
+  .button {
+    border: 0.2rem solid var(--color12)
+  }
   .cardImage {
     width: 20rem;
     height: 20rem;
@@ -200,6 +205,11 @@ head {
   }
   .cardText {
     font-size: var(--h3);
+  }
+  .section {
+    margin-right: 5rem;
+    margin-left: 5rem;
+    padding: 0;
   }
   .navbar {
     z-index: 2;
@@ -240,6 +250,7 @@ head {
   .site {
     margin-right: 0;
     margin-left: 0;
+    width: 100%;
   }
   .header {
     margin-left: 0;
@@ -256,6 +267,9 @@ head {
   }
   .cardText {
     font-size: var(--h4);
+  }
+  .button {
+    font-size: var(--h5);
   }
 }
 @media screen and (max-width: 700px) {
@@ -274,15 +288,15 @@ head {
   .header {
     margin-top: 8rem;
   }
-  .section {
-    margin-right: 5rem;
-    margin-left: 5rem;
-    padding: 0;
-  }
   .map {
     height: 25rem;
     width: 30rem;
     object-fit: cover;
   }
+  .wildImage {
+    height: 16rem;
+    width: 29rem;
+  }
+
 }
 </style>
