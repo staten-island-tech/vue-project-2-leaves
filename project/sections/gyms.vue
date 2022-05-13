@@ -74,7 +74,7 @@ export default {
         },
         {
           gym: "4",
-          name: "Stow-on-Side",
+          name: "Stow-on-Side-Fighting",
           location: "Lateral Town",
           image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSviCfSRSW8UGKhiEfpfNvlxvn6Yoca5EStNA&usqp=CAU",
@@ -88,7 +88,7 @@ export default {
         },
         {
           gym: "4",
-          name: "Stow-on-Side",
+          name: "Stow-on-Side-Ghost",
           location: "Lateral Town",
           image:
             "http://pm1.narvii.com/7463/1eeafaf7bc8ec345e4d3eab5c4465c5cc28d2d95r1-1024-642v2_uhq.jpg",
@@ -116,7 +116,7 @@ export default {
         },
         {
           gym: "6",
-          name: "Circhester",
+          name: "Circhester-Ice",
           location: "Circus Town",
           image:
             "https://oyster.ignimgs.com/wordpress/stg.ign.com/2020/05/Shield_gym_ice.png?fit=bounds&width=1280&height=720",
@@ -130,7 +130,7 @@ export default {
         },
         {
           gym: "6",
-          name: "Circhester",
+          name: "Circhester-Rock",
           location: "Circus Town",
           image:
             "https://static1-us.millenium.gg/articles/1/91/11/@/101997-part13-article_m-2.png",

@@ -35,8 +35,6 @@ import Wild from "../sections/wild.vue";
 import Gyms from "../sections/gyms.vue";
 import Dynamax from "../sections/dyna.vue";
 import Footer from "../sections/footer.vue";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap";
 export default {
   name: "site",
   components: {
@@ -47,12 +45,6 @@ export default {
     Gyms,
     Dynamax,
     Footer,
-    gsap,
-  },
-  gsap() {
-    gsap.registerPlugin(ScrollTrigger);
-    const tl = gsap.timeline({ delay: 0.8 });
-    tl.from(".site-title", { opacity: 0, duration: 0.3 });
   },
   methods: {
     navigateTop: function (n) {
