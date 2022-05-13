@@ -240,10 +240,10 @@ head {
     width: 37rem;
   }
   .dynamaxImage {
-  height: 19rem;
-  width: 32rem;
-  object-fit: cover;
-  text-align: center;
+    height: 19rem;
+    width: 32rem;
+    object-fit: cover;
+    text-align: center;
   }
   .site {
     margin-right: 0;
