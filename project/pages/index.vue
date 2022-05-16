@@ -45,6 +45,7 @@ export default {
     Gyms,
     Dynamax,
     Footer,
+
   },
   methods: {
     navigateTop: function (n) {
