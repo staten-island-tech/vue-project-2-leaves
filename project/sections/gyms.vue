@@ -8,6 +8,7 @@
         :name="gym.name"
         :location="gym.location"
         :image="gym.image"
+        :alt="gym.alt"
         :pokemon="gym.pokemon"
         :badge="gym.badge"
         :leader="gym.leader"
@@ -36,6 +37,7 @@ export default {
           location: "Turf Town",
           image:
             "https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2019/02/pokemon-sword-shield-gym.jpg",
+          alt: "",
           badge: "Grass Badge",
           pokemon: ["Gossifleur", "Eldegoss"],
           leader: "Milo",
@@ -74,7 +76,7 @@ export default {
         },
         {
           gym: "4",
-          name: "Stow-on-Side-Fighting",
+          name: "Stow-on-Side (Fighting)",
           location: "Lateral Town",
           image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSviCfSRSW8UGKhiEfpfNvlxvn6Yoca5EStNA&usqp=CAU",
@@ -88,7 +90,7 @@ export default {
         },
         {
           gym: "4",
-          name: "Stow-on-Side-Ghost",
+          name: "Stow-on-Side (Ghost)",
           location: "Lateral Town",
           image:
             "http://pm1.narvii.com/7463/1eeafaf7bc8ec345e4d3eab5c4465c5cc28d2d95r1-1024-642v2_uhq.jpg",
@@ -105,7 +107,7 @@ export default {
           name: "Ballonlea",
           location: "Arabesque Town",
           image:
-            "https://www.dailyesports.gg/wp-content/uploads/2020/04/Ballonlea-Gym.jpg",
+            "https://static.wikia.nocookie.net/pokemon/images/4/48/Ballonlea_Stadium.png/revision/latest?cb=20191127152611",
           badge: "Fairy Badge",
           pokemon: ["Weezing", "Mawile", "Togekiss", "Alcremie"],
           leader: " Opal",
@@ -116,7 +118,7 @@ export default {
         },
         {
           gym: "6",
-          name: "Circhester-Ice",
+          name: "Circhester (Ice)",
           location: "Circus Town",
           image:
             "https://oyster.ignimgs.com/wordpress/stg.ign.com/2020/05/Shield_gym_ice.png?fit=bounds&width=1280&height=720",
@@ -130,7 +132,7 @@ export default {
         },
         {
           gym: "6",
-          name: "Circhester-Rock",
+          name: "Circhester (Rock)",
           location: "Circus Town",
           image:
             "https://static1-us.millenium.gg/articles/1/91/11/@/101997-part13-article_m-2.png",
