@@ -18,10 +18,10 @@
     --color13: rgb(41, 41, 41, 70%); 
     --color3: rgb(51, 51, 51);
     --color4: rgb(61, 61, 61);
-    --color5: rgb(70, 70, 70);
     /* second theme */
     --color12: rgb(73, 119, 131);
-    --color11: rgb(80, 223, 180);
+    --color14: rgb(44, 89, 100);
+    --color11: rgb(73, 247, 180);
 
     --color6:rgb(238, 106, 243);
     --color7: rgb(105, 238, 145);
@@ -29,11 +29,6 @@
     --color9: rgb(202, 103, 241);
     --color10: rgb(255, 181, 243);
 
-    --colorA: rgb(31, 31, 31);
-    --colorB: rgb(9, 82, 31);
-    --colorC: rgb(0,0,0);
-    --colorD: rgb(0,0,0);
-    --colorE: rgb(0,0,0);
     
     
 }

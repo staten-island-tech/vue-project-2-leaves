@@ -70,7 +70,9 @@ export default {
       if (document.body.classList.contains("theme2")) {
         document.body.classList.add("theme1");
         document.body.classList.remove("theme2");
-      } else {
+         
+      }
+      else {
         document.body.classList.add("theme2");
         document.body.classList.remove("theme1");
       }
@@ -162,8 +164,8 @@ head {
   background-color: var(--color3);
 }
 .theme2 {
-  color: var(--color3);
-  background-color: var(--color1);
+  color: var(--color11);
+  background-color: var(--color12);
 }
 .sectionSubTitle {
   margin-top: 1.5rem;
@@ -171,6 +173,7 @@ head {
 .text {
   margin-top: 0.8rem;
 }
+
 
 @keyframes glow {
   0% {

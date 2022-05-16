@@ -18,7 +18,6 @@ export default {
 <style>
  .cardTitle {
    font-size: var(--h4);
-   color: var(--color1)
  }
  .card {
    background-color: var(--color4);
