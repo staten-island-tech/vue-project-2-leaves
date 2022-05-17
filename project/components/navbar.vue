@@ -63,16 +63,16 @@ export default {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
   opacity: 1;
-  color: var(--color0);
   background-color: transparent;
   border: none;
+  color: var(--color1);
   font-size: var(--h4);
   transition-duration: 0.2s;
   text-align: right;
   margin-right: 1rem;
 }
 .button:hover {
-  color: var(--color1);
+  
   transform: translate(-20px) scale(1.2);
 }
 </style>

@@ -8,23 +8,21 @@
         alt=""
       />
     </div>
-    <div>
-      <NavBar
-        @trigger0="navigateTop"
-        @trigger1="navigateAbout"
-        @trigger2="navigateTowns"
-        @trigger3="navigateWild"
-        @trigger4="navigateGyms"
-        @trigger5="navigateDynamax"
-        @trigger6="changeTheme"
-      ></NavBar>
-      <About></About>
-      <Towns></Towns>
-      <Wild></Wild>
-      <Gyms></Gyms>
-      <Dynamax></Dynamax>
-      <Footer></Footer>
-    </div>
+    <NavBar
+      @trigger0="navigateTop"
+      @trigger1="navigateAbout"
+      @trigger2="navigateTowns"
+      @trigger3="navigateWild"
+      @trigger4="navigateGyms"
+      @trigger5="navigateDynamax"
+      @trigger6="changeTheme"
+    ></NavBar>
+    <About></About>
+    <Towns></Towns>
+    <Wild></Wild>
+    <Gyms></Gyms>
+    <Dynamax></Dynamax>
+    <Footer></Footer>
   </div>
 </template>
 <script>
@@ -70,13 +68,16 @@ export default {
       if (document.body.classList.contains("theme2")) {
         document.body.classList.add("theme1");
         document.body.classList.remove("theme2");
-         
+        
       }
       else {
         document.body.classList.add("theme2");
         document.body.classList.remove("theme1");
       }
     },
+  },
+  data () {
+
   },
 };
 </script>
