@@ -107,7 +107,7 @@ export default {
           name: "Ballonlea",
           location: "Arabesque Town",
           image:
-            "https://static.wikia.nocookie.net/pokemon/images/4/48/Ballonlea_Stadium.png/revision/latest?cb=20191127152611",
+            "https://d1fytg1nnnd8c0.cloudfront.net/wp-content/uploads/2020/04/Ballonlea-Gym.jpg",
           badge: "Fairy Badge",
           pokemon: ["Weezing", "Mawile", "Togekiss", "Alcremie"],
           leader: " Opal",
