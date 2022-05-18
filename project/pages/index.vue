@@ -47,7 +47,7 @@ export default {
   },
   gsap() {
     const tl = gsap.timeline({ delay: 0.3 });
-    tl.from(".site", { opacity: 0, duration: 0.3 });
+    tl.from(".card", { size: 0.5, rotation: 360, x: 300, duration: 0.3 });
     gsap.to(".text", { color: "#db7272", duration: 2 });
   },
   methods: {
