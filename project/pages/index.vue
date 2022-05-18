@@ -33,6 +33,7 @@ import Wild from "../sections/wild.vue";
 import Gyms from "../sections/gyms.vue";
 import Dynamax from "../sections/dyna.vue";
 import Footer from "../sections/footer.vue";
+import gsap from "gsap";
 export default {
   name: "site",
   components: {
@@ -43,7 +44,11 @@ export default {
     Gyms,
     Dynamax,
     Footer,
-
+  },
+  gsap() {
+    const tl = gsap.timeline({ delay: 0.3 });
+    tl.from(".site", { opacity: 0, duration: 0.3 });
+    gsap.to(".text", { color: "#db7272", duration: 2 });
   },
   methods: {
     navigateTop: function (n) {
@@ -68,22 +73,20 @@ export default {
       if (document.body.classList.contains("theme2")) {
         document.body.classList.add("theme1");
         document.body.classList.remove("theme2");
-        
-      }
-      else {
+      } else {
         document.body.classList.add("theme2");
         document.body.classList.remove("theme1");
       }
     },
   },
-  data () {
-
+  data() {
+    return {};
   },
 };
 </script>
 <style>
 @import "../styles/root.css";
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Iceberg&family=Nova+Flat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Iceberg&family=Nova+Flat&display=swap");
 body,
 head,
 * {
@@ -175,7 +178,6 @@ head {
   margin-top: 0.8rem;
 }
 
-
 @keyframes glow {
   0% {
     color: var(--color10);
@@ -198,7 +200,7 @@ head {
 }
 @media screen and (max-width: 1100px) {
   .button {
-    border: 0.2rem solid var(--color12)
+    border: 0.2rem solid var(--color12);
   }
   .cardImage {
     width: 20rem;
@@ -302,6 +304,5 @@ head {
     height: 16rem;
     width: 29rem;
   }
-
 }
 </style>
