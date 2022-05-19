@@ -33,7 +33,7 @@ import Wild from "../sections/wild.vue";
 import Gyms from "../sections/gyms.vue";
 import Dynamax from "../sections/dyna.vue";
 import Footer from "../sections/footer.vue";
-import gsap from "gsap";
+import Gsap from "../pages/gsap.vue";
 export default {
   name: "site",
   components: {
@@ -44,12 +44,9 @@ export default {
     Gyms,
     Dynamax,
     Footer,
+    Gsap,
   },
-  gsap() {
-    const tl = gsap.timeline({ delay: 0.3 });
-    tl.from(".card", { size: 0.5, rotation: 360, x: 300, duration: 0.3 });
-    gsap.to(".text", { color: "#db7272", duration: 2 });
-  },
+
   methods: {
     navigateTop: function (n) {
       document.body.scrollIntoView();
