@@ -11,13 +11,13 @@ export default {
   gsap() {
     gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline({ delay: 0.3 });
-    tl.from(".card", { size: 0.5, rotation: 360, x: 300, duration: 0.3 });
-    gsap.to(".text", { color: "#db7272", duration: 2 });
+    tl.from("#site-title", { size: 0.5, rotation: 360, x: 300, duration: 0.3 });
+    gsap.from(".text", { color: rgb(51, 255, 143), duration: 2 });
   },
   methods: {
     boxRotation() {
       const gsap = this.$gsap;
-      gsap.to(".map`", { rotation: 27, x: 100, duration: 1 });
+      gsap.from(".map", { rotation: 27, x: 100, duration: 1 });
     },
   },
 };

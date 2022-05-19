@@ -33,7 +33,7 @@ import Wild from "../sections/wild.vue";
 import Gyms from "../sections/gyms.vue";
 import Dynamax from "../sections/dyna.vue";
 import Footer from "../sections/footer.vue";
-import Gsap from "../pages/gsap.vue";
+import Gsap from "../store/gsap.js";
 export default {
   name: "site",
   components: {
