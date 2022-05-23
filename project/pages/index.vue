@@ -33,7 +33,8 @@ import Wild from "../sections/wild.vue";
 import Gyms from "../sections/gyms.vue";
 import Dynamax from "../sections/dyna.vue";
 import Footer from "../sections/footer.vue";
-import Gsap from "../store/gsap.js";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
   name: "site",
   components: {
@@ -44,7 +45,11 @@ export default {
     Gyms,
     Dynamax,
     Footer,
-    Gsap,
+  },
+
+  mounted() {
+    this.boxRotation();
+    this.faded();
   },
 
   methods: {
@@ -74,6 +79,14 @@ export default {
         document.body.classList.add("theme2");
         document.body.classList.remove("theme1");
       }
+    },
+    boxRotation() {
+      const gsap = this.$gsap;
+      gsap.to(".map", { rotation: 0, x: 40, duration: 1 });
+    },
+    faded() {
+      const gsap = this.$gsap;
+      gsap.from(".site", { opacity: 0, duration: 1 });
     },
   },
   data() {

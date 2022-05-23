@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <div class="map">TEST</div>
+</template>
 
 <script>
 import { gsap } from "gsap";
@@ -24,4 +26,9 @@ export default {
 </script>
 
 <style>
+.map {
+  height: 50rem;
+  width: 50rem;
+  background-color: red;
+}
 </style>
