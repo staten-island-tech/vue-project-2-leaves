@@ -82,11 +82,11 @@ export default {
     },
     boxRotation() {
       const gsap = this.$gsap;
-      gsap.to(".map", { rotation: 0, x: 40, duration: 1 });
+      gsap.from(".map", { rotation: 0, x: 740, duration: 1 });
     },
     faded() {
       const gsap = this.$gsap;
-      gsap.from(".site", { opacity: 0, duration: 1 });
+      gsap.from(".site", { opacity: 0, duration: 2 });
     },
   },
   data() {
@@ -130,9 +130,8 @@ head {
   text-align: center;
 }
 .site {
-  width: 88%;
-  margin-left: 2%;
-  margin-right: 6%;
+  width: 92%;
+ 
 }
 .sectionTitle,
 .cardTitle,

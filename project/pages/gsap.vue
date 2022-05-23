@@ -26,9 +26,5 @@ export default {
 </script>
 
 <style>
-.map {
-  height: 50rem;
-  width: 50rem;
-  background-color: red;
-}
+
 </style>

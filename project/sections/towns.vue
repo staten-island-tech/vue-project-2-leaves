@@ -79,11 +79,9 @@ export default {
 
 <style>
 .townsDisplay {
-  overflow-x: auto;
-  overflow-y: none;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 </style>

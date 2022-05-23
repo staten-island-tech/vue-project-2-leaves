@@ -180,10 +180,8 @@ export default {
 
 <style>
 .gymsDisplay {
-  overflow-x: none;
-  overflow-y: auto;
   display: flex;
-  justify-content: space between;
-  flex-flow: row nowrap;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 </style>
