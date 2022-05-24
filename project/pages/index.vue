@@ -48,8 +48,8 @@ export default {
   },
 
   mounted() {
-    this.boxRotation();
-    this.faded();
+  /*   this.boxRotation();
+    this.faded(); */
     this.scrollanimation();
   },
 
@@ -90,14 +90,16 @@ export default {
       gsap.from(".site", { opacity: 0, duration: 2 });
     },
     scrollanimation() {
-      gsap.to(".cards", {
+      const gsap= this.$gsap;
+      gsap.registerPlugin("ScrollTrigger");
+      gsap.from(".card", {
         scrollTrigger: {
-          trigger: ".cards",
+          trigger: ".town",
           toggleActions: "restart none none none ",
         },
-        x: 400,
-        rotation: 360,
-        duration: 3,
+        rotation: 90,
+        duration: 1,
+        scale: 0.2,
       });
     },
   },
