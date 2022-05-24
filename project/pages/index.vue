@@ -50,6 +50,7 @@ export default {
   mounted() {
     this.boxRotation();
     this.faded();
+    this.scrollanimation();
   },
 
   methods: {
@@ -87,6 +88,18 @@ export default {
     faded() {
       const gsap = this.$gsap;
       gsap.from(".site", { opacity: 0, duration: 2 });
+    },
+    scrollanimation() {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".towns",
+          start: "center buttom",
+        },
+      });
+      tl.from("cardImage", { x: 200, opacity: 0, duration: 1.5 }).from(
+        ".cardtitle",
+        { y: 200, opacity: 0, duration: 1.5 }
+      );
     },
   },
   data() {
@@ -131,7 +144,6 @@ head {
 }
 .site {
   width: 92%;
- 
 }
 .sectionTitle,
 .cardTitle,
