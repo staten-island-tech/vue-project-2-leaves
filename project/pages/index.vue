@@ -90,16 +90,15 @@ export default {
       gsap.from(".site", { opacity: 0, duration: 2 });
     },
     scrollanimation() {
-      const tl = gsap.timeline({
+      gsap.to(".cards", {
         scrollTrigger: {
-          trigger: ".towns",
-          start: "center buttom",
+          trigger: ".cards",
+          toggleActions: "restart none none none ",
         },
+        x: 400,
+        rotation: 360,
+        duration: 3,
       });
-      tl.from("cardImage", { x: 200, opacity: 0, duration: 1.5 }).from(
-        ".cardtitle",
-        { y: 200, opacity: 0, duration: 1.5 }
-      );
     },
   },
   data() {
