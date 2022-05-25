@@ -48,9 +48,10 @@ export default {
   },
 
   mounted() {
-  /*   this.boxRotation();
+    /*   this.boxRotation();
     this.faded(); */
-    this.scrollanimation();
+    this.scrollanimationtowns();
+    this.scrollanimationgyms();
   },
 
   methods: {
@@ -89,12 +90,36 @@ export default {
       const gsap = this.$gsap;
       gsap.from(".site", { opacity: 0, duration: 2 });
     },
-    scrollanimation() {
-      const gsap= this.$gsap;
+    scrollanimationtowns() {
+      /* const tl = this.$gsap.timeline({
+        scrollTrigger: ".about",
+        delay: 0.1,
+      });
+      tl.from(".about-animation", {
+        duration: 0.3,
+        opacity: 0,
+        x: -150,
+        ease: "Power1.easeInOut",
+        stagger: 0.1,
+      }); */
+      const gsap = this.$gsap;
       gsap.registerPlugin("ScrollTrigger");
-      gsap.from(".card", {
+      gsap.from(".card-town", {
         scrollTrigger: {
-          trigger: ".town",
+          trigger: "#town",
+          toggleActions: "restart none none none ",
+        },
+        rotation: 90,
+        duration: 1,
+        scale: 0.2,
+      });
+    },
+    scrollanimationgyms() {
+      const gsap = this.$gsap;
+      gsap.registerPlugin("ScrollTrigger");
+      gsap.from(".card-gym", {
+        scrollTrigger: {
+          trigger: "#gyms",
           toggleActions: "restart none none none ",
         },
         rotation: 90,

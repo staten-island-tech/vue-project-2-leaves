@@ -1,7 +1,7 @@
 <template>
-  <div class="card">
+  <div class="card-town">
     <img class="cardImage" :src="image" alt="" />
-    <h5 class="cardTitle">{{ name }}</h5>   
+    <h5 class="cardTitle">{{ name }}</h5>
   </div>
 </template>
 <script>
@@ -16,12 +16,12 @@ export default {
 </script>
 
 <style>
- .cardTitle {
-   font-size: var(--h4);
- }
- .card {
-   background-color: var(--color4);
-   padding: 1rem;
-   margin: 1rem;
- }
+.cardTitle {
+  font-size: var(--h4);
+}
+.card-town {
+  background-color: var(--color4);
+  padding: 1rem;
+  margin: 1rem;
+}
 </style>

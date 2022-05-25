@@ -1,9 +1,13 @@
 <template>
-  <div class="card">
+  <div class="card-gym">
     <h5 class="cardTitle">{{ name }}</h5>
     <div class="gymContainer">
       <div class="gymCardLeft">
-        <img class="cardImage" :src="image" alt='An image of ${name}, one of the Galarian gyms' />
+        <img
+          class="cardImage"
+          :src="image"
+          alt="An image of ${name}, one of the Galarian gyms"
+        />
         <p class="cardText">Location: {{ location }}</p>
         <p class="cardText">Badge: {{ badge }}</p>
         <p class="cardText">Specialty: {{ type }}</p>
@@ -55,11 +59,16 @@ export default {
   width: 23rem;
   object-fit: cover;
 }
-.gymCardLeft, .gymCardRight {
+.gymCardLeft,
+.gymCardRight {
   margin: 1rem;
 }
 .cardText {
-  
   font-size: var(--h5);
+}
+.card-gym {
+  background-color: var(--color4);
+  padding: 1rem;
+  margin: 1rem;
 }
 </style>

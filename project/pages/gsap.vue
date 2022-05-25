@@ -14,7 +14,7 @@ export default {
     gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline({ delay: 0.3 });
     tl.from("#site-title", { size: 0.5, rotation: 360, x: 300, duration: 0.3 });
-    gsap.from(".text", { color: rgb(51, 255, 143), duration: 2 });
+    gsap.from(".text", { color: rgb(52, 255, 143), duration: 2 });
   },
   methods: {
     boxRotation() {
@@ -26,5 +26,4 @@ export default {
 </script>
 
 <style>
-
 </style>
