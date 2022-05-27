@@ -53,7 +53,6 @@ export default {
     this.scrollanimationtowns();
     this.scrollanimationgyms();
   },
-
   methods: {
     navigateTop: function (n) {
       document.body.scrollIntoView();
@@ -113,6 +112,12 @@ export default {
         duration: 1,
         scale: 0.2,
       });
+      useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // and for good measure to verify the file is loading correctly
+        console.log("ScrollTrigger", ScrollTrigger);
+      }, []);
     },
     scrollanimationgyms() {
       const gsap = this.$gsap;
