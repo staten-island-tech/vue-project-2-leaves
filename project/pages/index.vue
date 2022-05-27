@@ -48,8 +48,8 @@ export default {
   },
 
   mounted() {
-    /*   this.boxRotation();
-    this.faded(); */
+    this.boxRotation();
+    this.faded();
     this.scrollanimationtowns();
     this.scrollanimationgyms();
   },
@@ -91,7 +91,7 @@ export default {
       gsap.from(".site", { opacity: 0, duration: 2 });
     },
     scrollanimationtowns() {
-      /* const tl = this.$gsap.timeline({
+      /*const tl = this.$gsap.timeline({
         scrollTrigger: ".about",
         delay: 0.1,
       });
@@ -101,7 +101,7 @@ export default {
         x: -150,
         ease: "Power1.easeInOut",
         stagger: 0.1,
-      }); */
+      });*/
       const gsap = this.$gsap;
       gsap.registerPlugin("ScrollTrigger");
       gsap.from(".card-town", {
