@@ -131,7 +131,6 @@ export default {
         duration: 1,
         scale: 0.2,
       });
-      ScrollTrigger.refresh();
     },
   },
   data() {
